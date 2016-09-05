@@ -2,5 +2,115 @@
 html(lang="en")
 head
   meta(charset="UTF-8")
-  title Document
+  title PINK
+  link(rel="stylesheet", href="Pink/dist/css/style.css")
+  <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.4.2/pure-min.css">
 body
+  header.main-header
+    div.header-head
+      div.logo
+      nav.main-menu
+       ul
+         li.main-menu__btn
+           div.logo--menu
+           div.close-menu-btn
+         li.main-menu__info Информация
+         li.main-menu__opportunity Возможности
+         li.main-menu__comments Отзывы
+         li.main-menu__cost Стоимость
+    article.header-body
+      p.header-body__tagline Взгляните на жизнь иначе!
+      button.header-body__btn(value="Скачать приложение")
+      a(href="#", class="btn-apple")
+      a(href="#", class="btn-android")
+      a(href="#", class="btn-wndows")
+      smal.header-body__note Доступно для iPhone, iPad, Android, Windows phone, Mac OS, Windows 8
+        
+    main.main-content
+      article.info
+        h3.info__headline Устли от серости мегаполиса? Нам есть, что вам предлжить!
+        div.info-columns
+          div.info__column1
+            h4.column1__headline Поднимает настроение
+            p.column1__paragraph Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
+            
+          div.info__column2
+            h4.column2__headline Меняет мир вокруг
+            p.column2__paragraph Сделает снимок и украсит его смайликом или текстовой подписью, чтобы усилить эффект
+            
+          div.info__column3
+            h4.column3__headline Заводит новых друзей
+            p.column3__paragraph Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
+        
+        div.effect
+          div.effect__diagram
+          div.effect__description
+            h4.effect__headline Эффект на 24 часа!
+            p.effect__paragraph Британские ученые провели исследование и доказали, что положительный эффект от использования приложения длится целые сутки!
+            a(href="#").effect__link Узнать больше об исследовании
+        
+      article.review
+        button.review-prew
+        ul.reviews-list
+          li.review__item
+            p.review__recall Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit voluptatem qui dolorum quis reiciendis quidem facilis esse accusamus molestias distinctio nam aliquam nemo error eos debitis fuga, ducimus necessitatibus omnis.
+            span.review__author Михаил Иванов
+            span.review__author-info 28 лет, слесарь
+          li.review__item
+             p.review__recall Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомилась со своей будущей женой в комментариях к выложенной фотографии!
+            span.review__author Николай Петров
+            span.review__author-info 25 лет, водитель трамвая
+          li.review__item
+             p.review__recall  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur eos eum aspernatur ipsum esse placeat delectus provident, deleniti voluptas consequatur, amet assumenda blanditiis, ullam! Ea nobis quisquam animi magni sequi.
+            span.review__author Анна Орлова
+            span.review__author-info 23 года, дизайнер
+        button.review-next
+        
+      article.price
+        teble.price-table
+          th.price-table__headline
+            td.invisible-cell
+            td База
+                span 1,99 USD
+            td.hit Стандарт
+              span 3,99 USD
+            td Анлим
+              span 9,99 USD
+          tr.price-table__row
+            td Розовый фильтр
+            td.price-table__cell--check
+            td.price-table__cell--cross
+            td.price-table__cell--cross
+          tr.price-table__row
+            td Смайлики
+            td.price-table__cell--check
+            td.price-table__cell--check
+            td.price-table__cell--cross
+          tr.price-table__row
+            td Комментарии
+            td.price-table__cell--check
+            td.price-table__cell--check
+            td.price-table__cell--check
+      
+      article.contacts
+        h4.contacts__headline Остались вопросы? Свяжитесь с нами!
+        div.contacts__tel
+          span Звоните:
+          a(href="#") 8(800) 1000 900
+        div.contacts__address
+          span Приезжайте в гости:
+          a(href="#") Санкт-Петербург, Невский проспект, д. 20
+        div.contacts__email
+          span Пишите:
+          a(href="#") hello@pinkapp.ru
+        div.contacts__map
+      
+    footer.main-footer
+        div.logo--footer
+        div.social-btn
+          a(href="#").social-btn__twitter Twitter
+          a(href="#").social-btn__facebook Facebook
+          a(href="#").social-btn__youtube YouTube
+        div.copywright 
+            span Website by <a href="#" class="copywright__creator">a</a> for <a href="#" class="copywright__customer"> HTMLAcademy</a>
+          
