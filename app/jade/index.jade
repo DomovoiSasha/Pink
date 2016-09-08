@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-html(lang="en")
-head
-  meta(charset="UTF-8")
-  title PINK
-  link(rel="stylesheet", href="Pink/dist/css/style.css")
-  <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.4.2/pure-min.css">
+html(lang="ru")
+head  
+  meta(charset="utf-8")
+  title PINK   
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,700&subset=cyrillic" rel="stylesheet">
+  link(rel="stylesheet", href="D:/Обучение/Проекты/Pink/dist/css/style.css")
 body
   header.main-header
     div.header-head
@@ -19,28 +19,37 @@ body
          li.main-menu__comments Отзывы
          li.main-menu__cost Стоимость
     article.header-body
-      p.header-body__tagline Взгляните на жизнь иначе!
-      button.header-body__btn(value="Скачать приложение")
-      a(href="#", class="btn-apple")
-      a(href="#", class="btn-android")
-      a(href="#", class="btn-wndows")
-      smal.header-body__note Доступно для iPhone, iPad, Android, Windows phone, Mac OS, Windows 8
+      div.header-body__content
+        p.header-body__tagline Взгляните на жизнь иначе!
+        button.header-body__btn(value="Скачать приложение") Скачать приложение
+        div.header-body__social-btn
+          a(href="#", class="btn-apple")
+          a(href="#", class="btn-android")
+          a(href="#", class="btn-windows")
+        smal.header-body__note Доступно для iPhone, iPad, Android, Windows phone, Mac OS, Windows 8
         
-    main.main-content
+  main.main-content
       article.info
-        h3.info__headline Устли от серости мегаполиса? Нам есть, что вам предлжить!
+        h3.info__headline Устали от серости мегаполиса?
+        span.info__subheadline Нам есть, что вам предлжить!
         div.info-columns
           div.info__column1
-            h4.column1__headline Поднимает настроение
-            p.column1__paragraph Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
+            picture.info-img1
+              img(src="", alt="")
+            h4.column__headline Поднимает настроение
+            p.column__paragraph Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
             
           div.info__column2
-            h4.column2__headline Меняет мир вокруг
-            p.column2__paragraph Сделает снимок и украсит его смайликом или текстовой подписью, чтобы усилить эффект
+            picture.info-img2
+              img(src="", alt="")
+            h4.column__headline Меняет мир вокруг
+            p.column__paragraph Сделает снимок и украсит его смайликом или текстовой подписью, чтобы усилить эффект
             
           div.info__column3
-            h4.column3__headline Заводит новых друзей
-            p.column3__paragraph Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
+            picture.info-img1
+              img(src="", alt="")
+            h4.column__headline Заводит новых друзей
+            p.column__paragraph Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
         
         div.effect
           div.effect__diagram
@@ -52,44 +61,44 @@ body
       article.review
         button.review-prew
         ul.reviews-list
-          li.review__item
+          li.review__item.review__item-hide
             p.review__recall Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit voluptatem qui dolorum quis reiciendis quidem facilis esse accusamus molestias distinctio nam aliquam nemo error eos debitis fuga, ducimus necessitatibus omnis.
             span.review__author Михаил Иванов
             span.review__author-info 28 лет, слесарь
           li.review__item
              p.review__recall Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомилась со своей будущей женой в комментариях к выложенной фотографии!
-            span.review__author Николай Петров
-            span.review__author-info 25 лет, водитель трамвая
-          li.review__item
+             span.review__author Николай Петров
+             span.review__author-info 25 лет, водитель трамвая
+          li.review__item.review__item-hide
              p.review__recall  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur eos eum aspernatur ipsum esse placeat delectus provident, deleniti voluptas consequatur, amet assumenda blanditiis, ullam! Ea nobis quisquam animi magni sequi.
-            span.review__author Анна Орлова
-            span.review__author-info 23 года, дизайнер
+             span.review__author Анна Орлова
+             span.review__author-info 23 года, дизайнер
         button.review-next
         
       article.price
-        teble.price-table
-          th.price-table__headline
-            td.invisible-cell
-            td База
+        table.price-table
+          tr.price-table__headline
+            th.invisible-cell
+            th База
                 span 1,99 USD
-            td.hit Стандарт
+            th.hit Стандарт
               span 3,99 USD
-            td Анлим
+            th Анлим
               span 9,99 USD
           tr.price-table__row
             td Розовый фильтр
             td.price-table__cell--check
-            td.price-table__cell--cross
-            td.price-table__cell--cross
+            td.price-table__cell--check
+            td.price-table__cell--check
           tr.price-table__row
             td Смайлики
-            td.price-table__cell--check
-            td.price-table__cell--check
             td.price-table__cell--cross
+            td.price-table__cell--check
+            td.price-table__cell--check
           tr.price-table__row
             td Комментарии
-            td.price-table__cell--check
-            td.price-table__cell--check
+            td.price-table__cell--cross
+            td.price-table__cell--cross
             td.price-table__cell--check
       
       article.contacts
@@ -105,7 +114,7 @@ body
           a(href="#") hello@pinkapp.ru
         div.contacts__map
       
-    footer.main-footer
+  footer.main-footer
         div.logo--footer
         div.social-btn
           a(href="#").social-btn__twitter Twitter
@@ -113,4 +122,4 @@ body
           a(href="#").social-btn__youtube YouTube
         div.copywright 
             span Website by <a href="#" class="copywright__creator">a</a> for <a href="#" class="copywright__customer"> HTMLAcademy</a>
-          
+  script(src="./dist/script/sprite.js")
