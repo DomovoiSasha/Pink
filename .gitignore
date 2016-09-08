@@ -38,6 +38,6 @@ jspm_packages
 /gulpfile.js
 /package.json
 /app/design/
-/app/mages/
-*.cfg
+/app/images/
+/*.cfg
 
