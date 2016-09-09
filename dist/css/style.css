@@ -27,11 +27,12 @@ body {
   background-color: #283645;
   background-image: url("file:///D:/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B/Pink/dist/images/background-2@1x.jpg");
   background-repeat: no-repeat;
-  background-position: bottom;
+  background-position: center;
+  background-size: 120% 100%;
 }
 .header-head {
   min-height: 110px;
-  padding: 27px 130px 43px;
+  padding: 27px 10.83333% 43px;
   background-color: rgba(0,0,0,0.4);
   color: #fff;
   clear: both;
@@ -46,7 +47,7 @@ body {
 }
 .main-menu {
   float: right;
-  min-width: 600px;
+  min-width: 60%;
 }
 .main-menu__btn {
   display: none;
@@ -55,14 +56,14 @@ li[class^=main-menu] {
   display: inline-block;
   font-size: 18px;
   line-height: 18px;
-  margin-left: 65px;
+  margin-left: 66px;
   margin-top: 21px;
 }
 li[class^=main-menu]:first-child {
   margin-left: 0;
 }
 .header-body {
-  padding: 0 130px;
+  padding: 0 10.83333%;
   margin: 0;
   color: #fff;
   position: relative;
@@ -71,7 +72,7 @@ li[class^=main-menu]:first-child {
   content: '';
   position: absolute;
   display: block;
-  right: 170px;
+  right: 14.166667vw;
   bottom: 0;
   width: 560px;
   height: 645px;
@@ -81,15 +82,16 @@ li[class^=main-menu]:first-child {
 }
 .header-body__content {
   margin-top: 110px;
-  width: 300px;
+  width: 35%;
   position: relative;
   text-align: center;
+  margin-left: -1.5%;
   padding-bottom: 121px;
 }
 .header-body__tagline {
   text-align: center;
   display: block;
-  width: 231px;
+  width: 77%;
   height: 170px;
   font-size: 50px;
   line-height: 58px;
@@ -102,17 +104,17 @@ li[class^=main-menu]:first-child {
   text-align: center;
   background-color: transparent;
   color: #fff;
-  border: 3px solid #fff;
-  border-radius: 35px;
+  border: 1% solid #fff;
+  border-radius: 30px;
   font-size: 20px;
   line-height: 23px;
   font-weight: 700;
-  padding: 15px 40px;
+  padding: 15px 13.33%;
   margin: 0 auto;
   margin-bottom: 66px;
 }
 .header-body__social-btn {
-  width: 205px;
+  width: 68.3333%;
   height: 57px;
   margin: 0 auto;
   margin-bottom: 58px;
@@ -122,14 +124,14 @@ li[class^=main-menu]:first-child {
   width: 46px;
   height: 57px;
   background-color: rgba(255,255,255,0.5);
-  margin-right: 36px;
+  margin-right: 17.56%;
 }
 .btn-android {
   display: inline-block;
   width: 42px;
   height: 48px;
   background-color: rgba(255,255,255,0.5);
-  margin-right: 36px;
+  margin-right: 17.56%;
 }
 .btn-windows {
   display: inline-block;
@@ -166,12 +168,12 @@ li[class^=main-menu]:first-child {
   line-height: 58px;
   font-weight: 300;
   margin: 0 auto;
-  width: 420px;
+  width: 35%;
   margin-bottom: 80px;
 }
 .info-columns {
   position: relative;
-  padding: 0 162px;
+  padding: 0 13.5%;
   clear: both;
   width: 100%;
   height: 580px;
@@ -188,24 +190,24 @@ li[class^=main-menu]:first-child {
   display: block;
   width: 0;
   height: 0;
-  border: 45px solid #fff;
-  border-left: 600px solid #fff;
-  border-right: 600px solid transparent;
+  border-top: 45px solid #fff;
+  border-left: 50vw solid #fff;
+  border-right: 50vw solid transparent;
   border-bottom: 45px solid transparent;
 }
 .info__column1 {
-  width: 240px;
+  width: 27.4%;
   float: left;
-  margin-right: 90px;
+  margin-right: 10.27%;
   text-align: center;
 }
 .info__column2 {
-  width: 225px;
+  width: 25.68%;
   float: left;
   text-align: center;
 }
 .info__column3 {
-  width: 235px;
+  width: 26.83%;
   float: right;
   text-align: center;
 }
@@ -232,7 +234,8 @@ li[class^=main-menu]:first-child {
   display: block;
   position: absolute;
   bottom: 0;
-  left: 36px;
+  left: 50%;
+  margin-left: -85px;
   width: 169px;
   height: 261px;
   background-image: url("file:///D:/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B/Pink/dist/images/iphone-screen-1-1@2x.png");
@@ -247,8 +250,8 @@ li[class^=main-menu]:first-child {
   display: block;
   position: absolute;
   bottom: -7px;
-  left: -17px;
-  width: 270px;
+  left: -1.41667vw;
+  width: 22.5vw;
   height: 6px;
   border-radius: 50%;
   box-shadow: 0 -5px 5px 0px #ccc;
@@ -269,7 +272,8 @@ li[class^=main-menu]:first-child {
   display: block;
   position: absolute;
   bottom: 0;
-  left: 28px;
+  left: 50%;
+  margin-left: -85px;
   width: 169px;
   height: 261px;
   background-image: url("file:///D:/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B/Pink/dist/images/iphone-screen-1-2@2x.png");
@@ -284,8 +288,8 @@ li[class^=main-menu]:first-child {
   display: block;
   position: absolute;
   bottom: -7px;
-  left: -22px;
-  width: 270px;
+  left: -1.833vw;
+  width: 22.5vw;
   height: 6px;
   border-radius: 50%;
   box-shadow: 0 -5px 5px 0px #ccc;
@@ -306,7 +310,8 @@ li[class^=main-menu]:first-child {
   display: block;
   position: absolute;
   bottom: 0;
-  left: 33px;
+  left: 50%;
+  margin-left: -85px;
   width: 169px;
   height: 261px;
   background-image: url("file:///D:/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B/Pink/dist/images/iphone-screen-1-3@2x.png");
@@ -321,15 +326,15 @@ li[class^=main-menu]:first-child {
   display: block;
   position: absolute;
   bottom: -7px;
-  left: -18px;
-  width: 270px;
+  left: -1.5vw;
+  width: 22.5vw;
   height: 6px;
   border-radius: 50%;
   box-shadow: 0 -5px 5px 0px #ccc;
 }
 .effect {
   width: 100%;
-  padding: 0 130px;
+  padding: 0 10.8333vw;
   padding-top: 46px;
   height: 460px;
   background-color: #f2f2f2;
@@ -344,7 +349,7 @@ li[class^=main-menu]:first-child {
 .effect__description {
   float: right;
   height: 205px;
-  width: 530px;
+  width: 56%;
   margin-right: 40px;
   margin-top: 92px;
 }
@@ -371,7 +376,7 @@ li[class^=main-menu]:first-child {
   clear: both;
   width: 100%;
   margin-bottom: 45px;
-  padding: 0px 130px;
+  padding: 0px 10.8333%;
   position: relative;
   text-align: center;
 }
@@ -385,7 +390,7 @@ li[class^=main-menu]:first-child {
   background-color: rgba(0,0,0,0.5);
 }
 .review__recall {
-  width: 677px;
+  width: 72%;
   height: 89px;
   line-height: 30px;
   font-size: 18px;
@@ -409,7 +414,7 @@ li[class^=main-menu]:first-child {
   width: 22px;
   height: 42px;
   top: 140px;
-  left: 130px;
+  left: 10.833%;
   border: none;
   background-color: rgba(0,0,0,0.5);
 }
@@ -419,7 +424,7 @@ li[class^=main-menu]:first-child {
   width: 22px;
   height: 42px;
   top: 140px;
-  right: 130px;
+  right: 10.833%;
   border: none;
   background-color: rgba(0,0,0,0.5);
 }
@@ -427,7 +432,7 @@ li[class^=main-menu]:first-child {
   background-color: #f2f2f2;
   height: 530px;
   position: relative;
-  padding: 153px 130px;
+  padding: 153px 10.833%;
 }
 .price::after {
   position: absolute;
@@ -438,12 +443,12 @@ li[class^=main-menu]:first-child {
   width: 0;
   height: 0;
   border: 45px solid #fff;
-  border-left: 600px solid #fff;
-  border-right: 600px solid transparent;
+  border-left: 50vw solid #fff;
+  border-right: 50vw solid transparent;
   border-bottom: 45px solid transparent;
 }
 .price-table {
-  width: 940px;
+  width: 100%;
   height: 281px;
   text-align: left;
   vertical-align: middle;
@@ -461,7 +466,7 @@ li[class^=main-menu]:first-child {
   border: 2px solid #e5e5e5;
   text-align: center;
   text-transform: uppercase;
-  font-weight: 7000;
+  font-weight: 700;
   font-size: 18px;
   line-height: 30px;
 }
@@ -498,7 +503,7 @@ li[class^=main-menu]:first-child {
   padding-left: 20px;
   font-size: 20px;
   line-height: 30px;
-  width: 210px;
+  width: 22.34%;
 }
 .price-table__row .price-table__cell--check {
   text-align: center;
@@ -518,7 +523,7 @@ li[class^=main-menu]:first-child {
   font-weight: 300;
   text-align: center;
   margin: 0 auto;
-  width: 480px;
+  width: 40%;
   margin-bottom: 58px;
 }
 .contacts__tel {
@@ -526,9 +531,9 @@ li[class^=main-menu]:first-child {
   font-size: 18px;
   line-height: 18px;
   display: inline-block;
-  width: 185px;
+  width: 15.42%;
   vertical-align: top;
-  margin-right: 90px;
+  margin-right: 7.5%;
 }
 .contacts__tel span {
   font-weight: 700;
@@ -548,8 +553,8 @@ li[class^=main-menu]:first-child {
   font-size: 18px;
   line-height: 18px;
   display: inline-block;
-  width: 270px;
-  margin-right: 90px;
+  width: 22.5%;
+  margin-right: 7.5%;
 }
 .contacts__address span {
   font-weight: 700;
@@ -570,7 +575,7 @@ li[class^=main-menu]:first-child {
   line-height: 18px;
   display: inline-block;
   vertical-align: top;
-  width: 190px;
+  width: 15.83%;
 }
 .contacts__email span {
   font-weight: 700;
@@ -590,6 +595,10 @@ li[class^=main-menu]:first-child {
   height: 522px;
   background-color: rgba(0,0,0,0.5);
 }
+.contacts__map iframe {
+  width: 100%;
+  height: 522px;
+}
 .contacts__map:before {
   content: '';
   display: block;
@@ -597,12 +606,13 @@ li[class^=main-menu]:first-child {
   top: 0;
   width: 0;
   height: 0;
+  margin: 0 auto;
   border-top: 125px solid #fff;
-  border-left: 600px solid transparent;
-  border-right: 600px solid transparent;
+  border-left: 50vw solid transparent;
+  border-right: 50vw solid transparent;
 }
 .main-footer {
-  padding: 50px 130px 85px;
+  padding: 50px 10.8333% 85px;
   vertical-align: middle;
 }
 .logo--footer {
@@ -611,11 +621,11 @@ li[class^=main-menu]:first-child {
   height: 40px;
   margin-bottom: 10px;
   background-color: rgba(0,0,0,0.5);
-  margin-right: 235px;
+  margin-right: 25%;
 }
 .social-btn {
   display: inline-block;
-  width: 177px;
+  width: 18.83%;
   height: 51px;
   margin-top: 23px;
 }
@@ -627,7 +637,7 @@ li[class^=main-menu]:first-child {
   overflow: hidden;
   border-radius: 50%;
   border: 3px solid #f2f2f2;
-  margin-right: 12px;
+  margin-right: 6.77966%;
 }
 .social-btn .social-btn__facebook {
   display: inline-block;
@@ -637,7 +647,7 @@ li[class^=main-menu]:first-child {
   overflow: hidden;
   border-radius: 50%;
   border: 3px solid #f2f2f2;
-  margin-right: 12px;
+  margin-right: 6.77966%;
 }
 .social-btn .social-btn__youtube {
   display: inline-block;
@@ -655,7 +665,6 @@ li[class^=main-menu]:first-child {
   font-size: 18px;
   line-height: 51px;
   margin-top: 25px;
-  margin-right: -5px;
 }
 .copywright__creator {
   display: inline-block;
@@ -678,3 +687,5 @@ li[class^=main-menu]:first-child {
   margin-bottom: -8px;
   overflow: hidden;
 }
+/*# sourceMappingURL=app/styles/style.css.map */
+/*# sourceMappingURL=style.css.map */
