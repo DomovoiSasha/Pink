@@ -1,5 +1,7 @@
 open = 'Open Sans', sans-serif
 item-color = #283645
+pink-color = #d22856
+sprite = "file:///D:/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B/Pink/dist/images/sprite-3@1.svg"
 
 body
 article
@@ -9,682 +11,2105 @@ footer
 main
 ul
 li
-a 
+a
+h1
+h2
+h3
+h4
   margin 0
   padding 0
   list-style none
   box-sizing border-box
 
-body 
-  width 100%
-  min-width 1200px
+
+
+
+body
   margin 0 auto
   font-family open
-  font-size 1rem
-  line-height 1rem
   color item-color
   background-color #fff
 
-.main-header 
+.main-header
   width 100%
   background-color item-color
-  background-image url("file:///D:/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B/Pink/dist/images/background-2@1x.jpg")
+  color #fff
   background-repeat no-repeat
   background-position center
-  background-size 120% 100%
+  background-size 100%
 
-.header-head 
-  min-height 110px
-  padding 27px 10.83333% 43px
+.header-head
   background-color rgba(0,0,0,0.4)
-  color #fff
   clear both
 
-.logo 
-  min-height  40px
-  width 146px
+.logo
   float left
-  background-image url("file:///D:/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B/Pink/dist/images/Pink-logo-3@1x.png")
   background-repeat no-repeat
-  background-size 146px 40px
-
-.main-menu 
-  float right
-  min-width 60%
-
-.main-menu__btn 
-  display none
-
-li[class^=main-menu] 
-  display inline-block
-  font-size 18px
-  line-height 18px
-  margin-left 66px
-  margin-top 21px
+  background-position top
+  height  40px
+  width 146px
   
-  &:first-child
-    margin-left 0
+  &:hover
+      background-position bottom
 
-.header-body 
-  padding 0 10.83333%
+    &:active
+      background-position top
+      opacity 0.3
+  
+.main-menu 
+    float right
+  
+.hader-body
+  position relative
   margin 0
-  color #fff
-  position relative
-
-.header-body::after 
-  content ''
-  position absolute
-  display block
-  right 14.166667vw
-  bottom 0
-  width 560px
-  height 645px
-  background-image url("file:///D:/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B/Pink/dist/images/iphone-hand-3@1x.png")
-  background-repeat no-repeat
-  background-position -322px
-
+      
 .header-body__content 
-  margin-top 110px
-  width 35%
-  position relative
-  text-align center
-  margin-left  -1.5%
-  padding-bottom 121px
-
+    position relative
+    text-align center
+    
 .header-body__tagline 
-  text-align center
-  display block
-  width 77%
-  height 170px
-  font-size 50px
-  line-height 58px
-  font-weight 300
-  margin 0 auto
-  margin-bottom 60px
-
-.header-body__btn 
-  display block
-  text-align center
-  background-color transparent
-  color #fff
-  border 1% solid #fff
-  border-radius 30px
-  font-size 20px
-  line-height 23px
-  font-weight 700
-  padding 15px 13.33%
-  margin 0 auto
-  margin-bottom 66px
+    text-align center
+    display block
+    margin 0 auto
+    
+ .header-body__btn 
+    display block
+    text-align center
+    background-color transparent
+    color #fff
+    border 3px solid #fff
+    border-radius 30px
+    margin 0 auto
+        
+    &:hover
+      background-color #fff
+      color pink-color
+      
+    &:active
+      color rgba(#d22856, 0.3)
 
 .header-body__social-btn 
-  width 68.3333%
-  height 57px
-  margin 0 auto
-  margin-bottom 58px
-
-.btn-apple 
-  display inline-block
-  width 46px
-  height 57px
-  background-color rgba(255,255,255,0.5)
-  margin-right 17.56%
-
-.btn-android 
-  display inline-block
-  width 42px
-  height 48px
-  background-color rgba(255,255,255,0.5)
-  margin-right 17.56%
-
-.btn-windows 
-  display inline-block
-  width 44px
-  height 42px
-  background-color rgba(255,255,255,0.5)
-  margin-bottom 3px
+    margin 0 auto
+    
+.btn-apple,
+.btn-android,
+.btn-windows
+    display inline-block
+    background-repeat no-repeat
 
 .header-body__note 
-  display block
-  font-size 18px
-  line-height 24px
-  font-weight 300
-
+    display block
+    
 .main-content 
-  width 100%
-
-.info 
-  width 100%
-  padding-top 68px
-  padding-bottom 67px
-
-.info__headline 
-  text-align center
-  font-size 50px
-  line-height 58px
-  font-weight 300
-  margin 0 auto
-
-.info__subheadline 
-  text-align center
-  display block
-  font-size 50px
-  line-height 58px
-  font-weight 300
-  margin 0 auto
-  width 35%
-  margin-bottom 80px
-
-.info-columns 
-  position relative
-  padding 0 13.5% //162px
-  clear both
-  width 100%
-  height 580px
-  font-size 18px
-  line-height 30px
-  padding-bottom 0px
-  background-color #f2f2f2
-
-.info-columns::after 
-  position absolute
-  top 0
-  left 0
-  content ''
-  display block
-  width 0
-  height 0
-  border-top 45px solid #fff
-  border-left 50vw solid #fff
-  border-right 50vw solid transparent
-  border-bottom 45px solid transparent
-
-.info__column1 
-  width 27.4% //240px 
-  float left
-  margin-right 10.27%
-  text-align center
-
-.info__column2 
-  width 25.68% //225px
-  float left
-  text-align center
-
-.info__column3 
-  width 26.83% //235px
-  float right
-  text-align center
-
-.column__headline 
-  color #000
-  font-weight 700
-  line-height 30px
-  font-size 30px
-  margin-bottom 25px
-
-.info-img1 
-  display block
-  margin-bottom 55px
-  position relative
-  height 300px
-  background-image url("file:///D:/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B/Pink/dist/images/iphone-case-1@2x.png")
-  background-position center
-  background-size 186px 300px
-  background-repeat no-repeat
-  z-index 3
-
-.info-img1::before 
-  content ''
-  display block
-  position absolute
-  bottom 0
-  left 50%
-  margin-left -85px
-  width 169px
-  height 261px
-  background-image url("file:///D:/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B/Pink/dist/images/iphone-screen-1-1@2x.png")
-  background-position top
-  background-size 169px 298px
-  overflow hidden
-  background-repeat no-repeat
-  z-index 4
-
-.info-img1::after 
-  content ''
-  display block
-  position absolute
-  bottom -7px
-  left -1.41667vw //-17px
-  width 22.5vw //270px
-  height 6px
-  border-radius 50%
-  box-shadow 0 -5px 5px 0px #ccc
-
-.info-img2 
-  display block
-  margin-bottom 55px
-  position relative
-  height 300px
-  background-image url("file:///D:/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B/Pink/dist/images/iphone-case-1@2x.png")
-  background-position center
-  background-size 186px 300px
-  background-repeat no-repeat
-  z-index 3
-
-.info-img2::before 
-  content ''
-  display block
-  position absolute
-  bottom 0
-  left 50%
-  margin-left -85px
-  width 169px
-  height 261px
-  background-image url("file:///D:/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B/Pink/dist/images/iphone-screen-1-2@2x.png")
-  background-position center
-  background-size 169px 298px
-  overflow hidden
-  background-repeat no-repeat
-  z-index 4
-
-.info-img2::after 
-  content ''
-  display block
-  position absolute
-  bottom -7px
-  left -1.833vw //-22px
-  width 22.5vw //270px
-  height 6px
-  border-radius 50%
-  box-shadow 0 -5px 5px 0px #ccc
-
-.info-img3 
-  display block
-  margin-bottom 55px
-  position relative
-  height 300px
-  background-image url("file:///D:/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B/Pink/dist/images/iphone-case-1@2x.png")
-  background-position center
-  background-size 186px 300px
-  background-repeat no-repeat
-  z-index 3
-
-.info-img3::before 
-  content ''
-  display block
-  position absolute
-  bottom 0
-  left 50%
-  margin-left -85px
-  width 169px
-  height 261px
-  background-image url("file:///D:/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B/Pink/dist/images/iphone-screen-1-3@2x.png")
-  background-position center
-  background-size 169px 298px
-  background-repeat no-repeat
-  overflow hidden
-  z-index 4
-
-.info-img3::after 
-  content ''
-  display block
-  position absolute
-  bottom -7px
-  left -1.5vw //-18px
-  width 22.5vw //270px
-  height 6px
-  border-radius 50%
-  box-shadow 0 -5px 5px 0px #ccc
-
-.effect 
-  width 100%
-  padding 0 10.8333vw//130px
-  padding-top 46px
-  height 460px
-  background-color #f2f2f2
-  clear both
-
-.effect__diagram 
-  float left
-  background-color rgba(0,0,0,0.5)
-  height 345px
-  width 300px
-
-.effect__description 
-  float right
-  height 205px
-  width 56% //530px
-  margin-right 40px
-  margin-top 92px
-
-.effect__headline 
-  font-weight 700
-  font-size 30px
-  line-height 30px
-  margin 0
-  padding 0
-  margin-bottom 25px
-
-.effect__paragraph 
-  font-size 18px
-  line-height 30px
-  margin-bottom 30px
-
-.effect__link 
-  color #d22856
-  line-height 30px
-  font-size 18px
-  text-decoration underline
-
-.review 
-  clear both
-  width 100%
-  margin-bottom 45px
-  padding 0px 10.8333%//130px
-  position relative
-  text-align center
-
-.review::before 
-  content ''
-  display block
-  width 85px
-  height 64px
-  margin 0 auto
-  margin-bottom 52px
-  background-color rgba(0,0,0,0.5)
-
-.review__recall 
-  width 72% //677px
-  height 89px
-  line-height 30px
-  font-size 18px
-  margin 0 auto
-  margin-bottom 37px
-
-.review__author 
-  color #000
-  font-weight 700
-  font-size 24px
-  margin-bottom 5px
-  line-height 30px
-  display block
-
-.review__item-hide 
-  display none
-
-.review-prew 
-  display inline-block
-  position absolute
-  width 22px
-  height 42px
-  top 140px
-  left 10.833%//130px
-  border none
-  background-color rgba(0,0,0,0.5)
-
-.review-next 
-  display inline-block
-  position absolute
-  width 22px
-  height 42px
-  top 140px
-  right 10.833%//130px
-  border none
-  background-color rgba(0,0,0,0.5)
-
-.price 
-  background-color #f2f2f2
-  height 530px
-  position relative
-  padding 153px 10.833%//130px
-
-.price::after 
-  position absolute
-  top 0
-  left 0
-  content ''
-  display block
-  width 0
-  height 0
-  border 45px solid #fff
-  border-left 50vw solid #fff
-  border-right 50vw solid transparent
-  border-bottom 45px solid transparent
-
-.price-table 
-  width 100%
-  height 281px
-  text-align left
-  vertical-align middle
-  background-color #fff
-  border-collapse collapse
-
-.price-table td 
-  border 2px solid #e5e5e5 
-
-.price-table__headline 
-  color #fff
-
-.price-table__headline th 
-  background-color #283645
-  border 2px solid #e5e5e5
-  text-align center
-  text-transform uppercase
-  font-weight 700
-  font-size 18px
-  line-height 30px
-
-.price-table__headline .invisible-cell 
-  background-color #f2f2f2
-  border none
-
-.price-table__headline span 
-  display block
-  font-weight 300
-  font-size 24px
-  line-height 30px
-
-.price-table__headline .hit 
-  position relative
-  overflow hidden
-
-.price-table__headline .hit::before 
-  content 'хит'
-  position absolute
-  display block
-  left -27px
-  top 5px
-  width 104px
-  height 32px
-  background-color #d22856
-  font-size 18px
-  font-weight 300
-  transform rotate(-45deg)
-
-.price-table__row td:first-child 
-  padding-left 20px
-  font-size 20px
-  line-height 30px
-  width 22.34% //210px
-
-.price-table__row .price-table__cell--check 
-  text-align center
-  background-color #9acd32
-
-.price-table__row .price-table__cell--cross 
-  text-align center
-  background-color #b22222
-
-.contacts 
-  padding-top 65px
-  text-align center
-
-.contacts__headline 
-  font-size 50px
-  line-height 60px
-  font-weight 300
-  text-align center
-  margin 0 auto
-  width 40% //480px
-  margin-bottom 58px
-
-.contacts__tel 
-  font-weight 700
-  font-size 18px
-  line-height 18px
-  display inline-block
-  width 15.42% //185px
-  vertical-align top
-  margin-right 7.5% //90px
-
-.contacts__tel span 
-  font-weight 700
-  display block
-  margin-bottom 29px
-
-.contacts__tel a 
-  color #d22856
-  font-weight 300
-  display block
-  font-size 24px
-  line-height 28px
-  text-decoration none
-
-.contacts__address 
-  font-weight 700
-  font-size 18px
-  line-height 18px
-  display inline-block
-  width 22.5% //270px
-  margin-right 7.5% //90px
-
-.contacts__address span 
-  font-weight 700
-  display block
-  margin-bottom 29px
-
-.contacts__address a 
-  color #d22856
-  font-weight 300
-  display block
-  font-size 24px
-  line-height 28px
-  text-decoration none
-
-.contacts__email 
-  font-weight 700
-  font-size 18px
-  line-height 18px
-  display inline-block
-  vertical-align top
-  width 15.83% //190px
-
-.contacts__email span 
-  font-weight 700
-  display block
-  margin-bottom 29px
-
-.contacts__email a 
-  color #d22856
-  font-weight 300
-  display block
-  font-size 24px
-  line-height 28px
-  text-decoration none
-
-.contacts__map
-  position relative
-  height 522px
-  background-color rgba(0,0,0,0.5)
-  
-  iframe
     width 100%
-    height 522px
+    
+.info 
+    width 100%
+    
+.info__headline ,
+.info__subheadline
+    text-align center
+    margin 0 auto
+    
+.info-columns 
+    position relative
+    clear both
+    width 100%
+    background-color #f2f2f2
+    
+.effect 
+    width 100%
+    background-color #f2f2f2
+    clear both
+    
+.effect__diagram 
+    position relative
+    float left
+    
+    svg
+      fill rgb(222, 222, 222)
+      
+    p
+      position absolute
+      box-sizing border-box
+      text-align center
+      vertical-align middle
+      color pink-color
+      display block
+      border-radius 50%
+      
+.effect__description 
+    float right
+    
+.effect__link 
+    color pink-color
+    text-decoration underline
+    
+.review 
+    clear both
+    width 100%
+    position relative
+    text-align center
+    
+.review__recall
+  margin 0 auto
   
-  &:before
+.review__author 
+    color #000
+    display block
+  
+.review__item-hide 
+    display none
+    
+.review-prew,
+.review-next
+    display inline-block
+    position absolute
+    border none
+    background-color transparent
+    cursor pointer
+    
+    &:before
+      content ''
+      display block
+      position absolute
+      
+  .price 
+    background-color #f2f2f2
+    position relative
+    
+.price-table 
+    width 100%
+    text-align left
+    vertical-align middle
+    background-color #fff
+    border-collapse collapse
+    
+.price-table td 
+    border 2px solid #e5e5e5 
+    
+.price-table__headline 
+    color #fff
+    
+.price-table__headline th 
+    background-color #283645
+    border 2px solid #e5e5e5
+    text-align center
+    text-transform uppercase
+    
+.price-table__headline .invisible-cell 
+    background-color #f2f2f2
+    border none
+    
+.price-table__headline span 
+    display block
+    
+.price-table__headline .hit 
+    position relative
+    overflow hidden
+    
+.price-table__headline .hit::before 
+    content 'хит'
+    position absolute
+    display block
+    background-color #d22856
+    
+.price-table__row .price-table__cell--check 
+    text-align center
+    position relative
+    
+    &:after
+      content ''
+      display block
+      position absolute
+      background-repeat no-repeat
+      
+.price-table__row .price-table__cell--cross 
+    text-align center
+    position relative
+    
+    &:after
+      content ''
+      display block
+      position absolute
+      background-repeat no-repeat
+      
+.contacts
+    width 100%
+    text-align center
+
+  .contacts__headline 
+    text-align center
+    margin 0 auto
+    
+.contacts__tel,
+.contacts__address,
+.contacts__email
+    display inline-block
+    vertical-align top
+    
+    span
+      display block
+      
+    a
+      color #d22856
+      display block
+      text-decoration none
+    
+.contacts__map
+    position relative
+    background-color rgba(0,0,0,0.5)
+
+    iframe
+      width 100%
+      
+.logo--footer 
+    display inline-block
+    background-position bottom
+    background-repeat no-repeat
+    background-size 100%
+    
+    &:hover
+    &:active
+      opacity 0.5
+    
+.social-btn 
+    display inline-block
+      
+.social-btn .social-btn__twitter,
+.social-btn .social-btn__facebook,
+.social-btn .social-btn__youtube
+    display inline-block
+    position relative
+    color transparent
+    overflow hidden
+    border-radius 50%
+        
+    &:hover
+      border-color item-color
+      
+    &:active
+      border-color #f2f2f2
+      opacity 0.3
+    
+    &:after
+      content ''
+      display block
+      position absolute
+      background-repeat no-repeat
+      
+.copywright 
+    display inline-block
+    float right
+    
+.copywright__creator,
+.copywright__customer
+    display inline-block
+    color transparent
+    overflow hidden
+    background-repeat no-repeat
+    
+
+    
+@media screen and (min-width:700px) and (max-width:1199px)
+  body 
+    width 100%
+    min-width 700px
+    font-size 14px
+    line-height 14px 
+    background-color orange
+
+  .main-header
+    background-image url("file:///D:/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B/Pink/dist/images/background-2@1x.jpg")    
+
+  .header-head 
+    min-height 110px
+    padding 27px 5.71% 43px //40px
+    
+  .logo 
+    background-color rgba(#fff, 0.5)
+    background-image url("file:///D:/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B/Pink/dist/images/1.png")    
+
+    
+//  .main-menu 
+//    min-width 100%
+
+  .main-menu__btn 
+    display block
+    width 50px
+    height 24px
+    background-color rgba(#fff, 0.5)
+    float right
+    margin-top 16px
+    
+  .menu__item-hide
+    display none
+
+  .main-menu__item
+    font-size 18px
+    line-height 32px
+    font-weight 700   
+    
+    &:hover
+      border-bottom 13px solid transparent
+      box-shadow 0 2px 0 0 #fff
+      cursor pointer
+      
+    &:active
+      border-bottom none
+      box-shadow none
+      opacity 0.3
+
+    &:first-child
+      margin-left 0
+
+  .header-body 
+    padding 0 5.71%
+    background-image url("file:///D:/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B/Pink/dist/images/iphone-hand-2@1x.png")
+    background-repeat no-repeat
+    background-position top
+    background-size 700px 545px
+
+  .header-body__content 
+    margin-top 110px
+    width 40.14% //281px
+    height 516px
+    border-bottom 1px solid transparent
+    
+  .header-body__tagline 
+    width 65.84%
+    height 170px
+    font-size 40px
+    line-height 46px
+    font-weight 300
+    margin-bottom 30px
+
+  .header-body__btn 
+    font-size 18px
+    line-height 49px
+    font-weight 700
+    padding 0px 13.17%
+    margin-bottom 45px
+
+  .header-body__social-btn 
+    width 72.95%
+    height 57px
+    margin-bottom 38px
+
+  .btn-apple
+    width 46px
+    height 57px
+    margin-right 17.56%
+    background-image url()
+    background-color rgba(#fff, 0.5)
+    background-position 0 0
+    background-size 85px 425px
+
+  .btn-android 
+    width 42px
+    height 48px
+    margin-right 17.56%
+    background-image url()
+    background-color rgba(#fff, 0.5)
+    background-position 0px -59.26px
+    background-size 85px 425px
+
+  .btn-windows 
+    display inline-block
+    width 44px
+    height 42px
+    margin-bottom 3px
+    background-image url()
+    background-color rgba(#fff, 0.5)
+    background-position 0px -112.2px
+    background-size 85px 425px
+    background-repeat no-repeat
+
+  .header-body__note 
+    font-size 18px
+    line-height 24px
+    font-weight 300
+    margin-bottom 107px
+
+  .info
+    padding-top 54px
+
+  .info__headline
+    font-size 40px
+    line-height 48px
+    font-weight 300
+
+  .info__subheadline 
+    display block
+    font-size 40px
+    line-height 48px
+    font-weight 300
+    width 47.86%
+    margin-bottom 45px
+
+  .info-columns 
+    height 481px
+    width 100%
+    background-color lightgray
+    margin-bottom 57px
+//    margin-top 71px
+//    padding 0 5.71% //40px
+//    font-size 14px
+//    line-height 24px
+//    font-weight normal
+//    clear both
+//    position relative
+//    background-color lightgray
+//    border-top 1px solid transparent
+//    z-index 3
+//    
+//    &:before
+//      content ''
+//      display block
+//      float left
+//      position relative
+//      margin-bottom 0px
+//      height 68.7vw
+//      padding 0
+//      width 40% //268px
+//      background-color black
+//      background-image url("file:///D:/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B/Pink/dist/images/iphone-screen-2-3@1x.png")
+//      background-position top
+//      background-size 100% auto
+//      background-repeat no-repeat
+//      z-index 3
+      
+//  .info-columns::after 
+//    position absolute
+//    top 0
+//    left 0
+//    content ''
+//    display block
+//    width 0
+//    height 0
+//    border-top 45px solid #fff
+//    border-left 50vw solid #fff
+//    border-right 50vw solid transparent
+//    border-bottom 45px solid transparent
+
+//  .info__column1 
+//    width 50% //310px
+//    float right
+//    margin-bottom 35px
+//    text-align left
+//    z-index 3
+//
+//  .info__column2 
+//    width 50% //310px 
+//    float right
+//    margin-bottom 35px
+//    text-align left
+//
+//  .info__column3 
+//    width 50% //310px 
+//    float right
+//    text-align left
+//
+//  .column__headline 
+//    color #000
+//    font-weight 700
+//    line-height 24px
+//    font-size 18px
+//    margin-bottom 10px
+//
+//  .info-img1 
+//    display none
+//    
+//  .info-img2 
+//    display none
+//
+//  .info-img3 
+//    display none
+//    
+  .effect
+    width 100%
+    padding 0 5.71%//40px
+    height 302px
+    background-color #fff
+    clear both
+    background-color rgba(olive)
+//
+//  .effect__diagram
+//    display block
+//    height 302px
+//    width 262px
+//    background-color black
+//    
+//    svg
+//      height 302px
+//      width 262px
+//      
+//    p
+//      height 220px
+//      width 220px
+//      padding-top 30px
+//      font-weight 700
+//      font-size 120px
+//      line-height 120px
+//      top -35px
+//      left 40px
+//      border 13px solid pink-color
+//
+//  .effect__description 
+//    height 205px
+//    width 50% //310px
+//    margin-left 7.7%
+//    margin-top 92px
+//
+//  .effect__headline 
+//    font-weight 700
+//    font-size 30px
+//    line-height 36px
+//    margin-bottom 25px
+//
+//  .effect__paragraph 
+//    font-size 14px
+//    line-height 24px
+//    margin-bottom 30px
+//
+//  .effect__link
+//    line-height 24px
+//    font-size 14px
+
+  .review 
+    margin-bottom 45px
+    padding 0px 10.8333%//130px
+
+  .review::before 
+    content ''
+    display block
+    width 85px
+    height 64px
+    margin 0 auto
+    margin-bottom 52px
+    background-image url(sprite)
+    background-position 0 -160.45px
+    background-repeat no-repeat
+    background-size 85px 425px
+
+  .review__recall 
+    width 72% //677px
+    height 89px
+    line-height 30px
+    font-size 18px
+    margin-bottom 37px
+
+  .review__author
+    font-weight 700
+    font-size 24px
+    margin-bottom 5px
+    line-height 30px
+
+  
+  .review-prew 
+    width 22px
+    height 42px
+    top 140px
+    left 10.833%//130px
+        
+    &:before
+      width 26px
+      height 26px
+      border 2px solid #c2c6ca
+      border-bottom none
+      border-right none
+      transform rotate(-45deg)
+      top 8px
+      left 5px
+
+  .review-next 
+    width 22px
+    height 42px
+    top 140px
+    right 10.833%//130px
+        
+    &:before
+      width 26px
+      height 26px
+      border 2px solid #c2c6ca
+      border-bottom none
+      border-left  none
+      transform rotate(45deg)
+      top 8px
+      right 5px
+
+  .price 
+    height 530px
+    padding 153px 10.833%//130px
+
+  .price::after 
+    position absolute
+    top 0
+    left 0
+    content ''
+    display block
+    width 0
+    height 0
+    border 45px solid #fff
+    border-left 50vw solid #fff
+    border-right 50vw solid transparent
+    border-bottom 45px solid transparent
+
+  .price-table 
+    height 281px
+
+  .price-table__headline th 
+    font-weight 700
+    font-size 18px
+    line-height 30px
+
+  .price-table__headline span
+    font-weight 300
+    font-size 24px
+    line-height 30px
+
+  .price-table__headline .hit::before 
+    left -27px
+    top 5px
+    width 104px
+    height 32px
+    font-size 18px
+    font-weight 300
+    transform rotate(-45deg)
+
+  .price-table__row td:first-child 
+    padding-left 20px
+    font-size 20px
+    line-height 30px
+    width 22.34% //210px
+
+  .price-table__row .price-table__cell--check::after
+      width 29px
+      height 20px
+      top 50%
+      right 50%
+      margin-top -10px
+      margin-right -14.5px
+      background-image url(sprite)
+      background-position 0 -234.35px
+      background-size 85px 425px
+
+  .price-table__row .price-table__cell--cross::after
+      width 26px
+      height 26px
+      top 50%
+      right 50%
+      margin-top -13px
+      margin-right -13px
+      background-image url(sprite)
+      background-position 0 -261.25px
+      background-size 85px 425px
+
+  .contacts
+    padding-top 65px
+
+  .contacts__headline 
+    font-size 50px
+    line-height 60px
+    font-weight 300
+    width 40% //480px
+    margin-bottom 58px
+
+  .contacts__tel 
+    font-weight 700
+    font-size 18px
+    line-height 18px
+    width 15.42% //185px
+    margin-right 7.5% //90px
+
+  .contacts__tel span 
+    font-weight 700    
+    margin-bottom 29px
+
+  .contacts__tel a 
+    font-weight 300
+    font-size 24px
+    line-height 28px
+
+  .contacts__address 
+    font-weight 700
+    font-size 18px
+    line-height 18px
+    width 22.5% //270px
+    margin-right 7.5% //90px
+
+  .contacts__address span 
+    font-weight 700
+    margin-bottom 29px
+
+  .contacts__address a    
+    font-weight 300
+    font-size 24px
+    line-height 28px
+
+  .contacts__email 
+    font-weight 700
+    font-size 18px
+    line-height 18px
+    width 15.83% //190px
+
+  .contacts__email span 
+    font-weight 700
+    margin-bottom 29px
+
+  .contacts__email a
+    font-weight 300
+    font-size 24px
+    line-height 28px
+
+  .contacts__map
+    height 522px
+
+    iframe
+      height 522px
+
+    &:before
+      content ''
+      display block
+      position absolute
+      top 0
+      width 0
+      height 0
+      margin 0 auto
+      border-top 125px solid #fff
+      border-left 50vw solid transparent
+      border-right 50vw solid transparent
+
+  .main-footer 
+    padding 50px 10.8333% 85px
+    vertical-align middle
+
+  .logo--footer 
+    width 146px
+    height 40px
+    margin-bottom 10px
+    margin-right 25% //235px
+    background-image url(logo-sprite)
+    
+  .social-btn
+    width 18.83% //177px
+    height 51px
+    margin-top 23px
+
+  .social-btn .social-btn__twitter 
+    width 51px
+    height 51px
+    border 3px solid #f2f2f2
+    margin-right 6.77966% //12px
+    
+    &:after
+      width 17px
+      height 14.16px
+      left 50%
+      margin-left -8.5px      
+      background-image url(sprite)
+      background-position 0 -293.25px
+      background-size 85px 425px
+
+  .social-btn .social-btn__facebook 
+    width 51px
+    height 51px
+    border 3px solid #f2f2f2
+    margin-right 6.77966% //12px
+    
+    &:after      
+      width 9px
+      height 19.6px
+      left 50%
+      margin-left -4.5px
+      margin-top -2px
+      background-image url(sprite)
+      background-position 0 -313.2px
+      background-size 85px 425px
+
+  .social-btn .social-btn__youtube 
+    width 51px
+    height 51px
+    border 3px solid #f2f2f2
+    
+    &:after
+      width 15px
+      height 14.29px
+      left 50%
+      margin-left -8.5px
+      background-image url(sprite)
+      background-position 0 -339.3px
+      background-size 85px 425px
+
+  .copywright
+    height 51px
+    font-size 18px
+    line-height 51px
+    margin-top 25px
+
+  .copywright__creator 
+    height 30px
+    width 27px
+    margin-left 10px
+    margin-right 10px
+    margin-bottom -10px
+    background-image url(sprite)
+    background-position 0 -356.3px
+    background-size 85px 425px
+
+  .copywright__customer
+    height 33px
+    width 27px
+    margin-left 10px
+    margin-bottom -11px
+    background-image url(sprite)
+    background-position 0 -390.5px
+    background-size 85px 425px
+    
+  @media (min-resolution: 144dpi ), (min-resolution: 1.5dppx )
+    .main-header
+      background-image url("file:///D:/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B/Pink/dist/images/background-3@2x.jpg")
+      background-size cover
+    
+    .header-body
+      background-image url("file:///D:/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B/Pink/dist/images/iphone-hand-3@2x.png")
+      background-size 1050px 645px
+      background-position right
+      background-repeat no-repeat
+      
+    .header-body:after
+      background-image none
+      
+    .info-img1
+      background-image url("file:///D:/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B/Pink/dist/images/iphone-screen-3-1@2x.png")
+      
+    .info-img2
+      background-image url("file:///D:/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B/Pink/dist/images/iphone-screen-3-2@2x.png")
+      
+    .info-img3
+      background-image url("file:///D:/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B/Pink/dist/images/iphone-screen-3-3@2x.png")
+      
+    .logo
+      background-image url("file:///D:/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B/Pink/dist/images/logo-sprite-2@2.png")
+      background-size 100%
+      
+    .logo--footer
+      background-image url("file:///D:/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B/Pink/dist/images/logo-sprite-2@2.png")
+      background-size 100%
+
+
+
+
+    
+    
+      
+      
+@media screen and (min-width:1200px) and (max-width:1439px)  
+  body 
+    width 100%
+    min-width 1200px
+    font-size 18px
+    line-height 18px
+    background-color crimson
+
+  .main-header    
+    background-image url("file:///D:/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B/Pink/dist/images/background-3@1x.jpg")    
+
+  .header-head 
+    min-height 110px
+    padding 27px 10.83333% 43px
+    
+  .logo 
+    background-image url("file:///D:/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B/Pink/dist/images/logo-sprite-3@1.png")    
+
+    
+  .main-menu 
+    min-width 60%
+
+  .main-menu__btn--hide
+    display none
+
+  .main-menu__item
+    display inline-block
+    font-size 18px
+    line-height 18px
+    margin-left 66px
+    margin-top 21px    
+    
+    &:hover
+      border-bottom 13px solid transparent
+      box-shadow 0 2px 0 0 #fff
+      cursor pointer
+      
+    &:active
+      border-bottom none
+      box-shadow none
+      opacity 0.3
+
+    &:first-child
+      margin-left 0
+
+  .header-body 
+    padding 0 10.83333%
+    background-image url("file:///D:/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B/Pink/dist/images/iphone-hand-3@1x.png")
+    background-position 13.333vw
+    background-size 1050px 645px
+    background-repeat no-repeat
+
+  .header-body__content 
+    margin-top 110px
+    width 35%
+    margin-left  -1.5%
+    padding-bottom 121px
+
+  .header-body__tagline 
+    width 77%
+    height 170px
+    font-size 50px
+    line-height 58px
+    font-weight 300
+    margin-bottom 60px
+
+  .header-body__btn 
+    font-size 20px
+    line-height 23px
+    font-weight 700
+    padding 15px 13.33%
+    margin-bottom 66px
+
+  .header-body__social-btn 
+    width 68.3333%
+    height 57px
+    margin-bottom 58px
+
+  .btn-apple
+    width 46px
+    height 57px
+    margin-right 17.56%
+    background-image url(sprite)
+    background-position 0 0
+    background-size 85px 425px
+
+  .btn-android 
+    width 42px
+    height 48px
+    margin-right 17.56%
+    background-image url(sprite)
+    background-position 0px -59.26px
+    background-size 85px 425px
+
+  .btn-windows 
+    display inline-block
+    width 44px
+    height 42px
+    margin-bottom 3px
+    background-image url(sprite)
+    background-position 0px -112.2px
+    background-size 85px 425px
+    background-repeat no-repeat
+
+  .header-body__note 
+    font-size 18px
+    line-height 24px
+    font-weight 300
+
+  .info
+    padding-top 68px
+    padding-bottom 67px
+
+  .info__headline
+    font-size 50px
+    line-height 58px
+    font-weight 300
+
+  .info__subheadline 
+    display block
+    font-size 50px
+    line-height 58px
+    font-weight 300
+    width 35%
+    margin-bottom 80px
+
+  .info-columns 
+    padding 0 13.5% //162px
+    height 580px
+    font-size 18px
+    line-height 30px
+    padding-bottom 0px
+
+  .info-columns::after 
+    position absolute
+    top 0
+    left 0
+    content ''
+    display block
+    width 0
+    height 0
+    border-top 45px solid #fff
+    border-left 50vw solid #fff
+    border-right 50vw solid transparent
+    border-bottom 45px solid transparent
+
+  .info__column1 
+    width 27.4% //240px 
+    float left
+    margin-right 10.27%
+    text-align center
+
+  .info__column2 
+    width 25.68% //225px
+    float left
+    text-align center
+
+  .info__column3 
+    width 26.83% //235px
+    float right
+    text-align center
+
+  .column__headline 
+    color #000
+    font-weight 700
+    line-height 30px
+    font-size 30px
+    margin-bottom 25px
+
+  .info-img1 
+    display block
+    margin-bottom 55px
+    position relative
+    height 300px
+    background-image url("file:///D:/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B/Pink/dist/images/iphone-screen-3-1@1x.png")
+    background-position center
+    background-size 292px 300px
+    background-repeat no-repeat
+    z-index 3
+
+  .info-img1::after 
     content ''
     display block
     position absolute
+    bottom -7px
+    left -1.41667vw //-17px
+    width 22.5vw //270px
+    height 6px
+    border-radius 50%
+    box-shadow 0 -5px 5px 0px #ccc
+
+  .info-img2 
+    display block
+    margin-bottom 55px
+    position relative
+    height 300px
+    background-image url("file:///D:/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B/Pink/dist/images/iphone-screen-3-2@1x.png")
+    background-position center
+    background-size 292px 300px
+    background-repeat no-repeat
+    z-index 3
+
+  .info-img2::after 
+    content ''
+    display block
+    position absolute
+    bottom -7px
+    left -1.833vw //-22px
+    width 22.5vw //270px
+    height 6px
+    border-radius 50%
+    box-shadow 0 -5px 5px 0px #ccc
+
+  .info-img3 
+    display block
+    margin-bottom 55px
+    position relative
+    height 300px
+    background-image url("file:///D:/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B/Pink/dist/images/iphone-screen-3-3@1x.png")
+    background-position center
+    background-size 292px 300px
+    background-repeat no-repeat
+    z-index 3
+
+  .info-img3::after 
+    content ''
+    display block
+    position absolute
+    bottom -7px
+    left -1.5vw //-18px
+    width 22.5vw //270px
+    height 6px
+    border-radius 50%
+    box-shadow 0 -5px 5px 0px #ccc
+
+  .effect 
+    padding 0 10.8333%//130px
+    padding-top 46px
+    height 460px
+
+  .effect__diagram
+    height 345px
+    width 300px
+    
+    svg
+      height 345px
+      width 300px
+      
+    p
+      height 220px
+      width 220px
+      padding-top 30px
+      font-weight 700
+      font-size 120px
+      line-height 120px
+      top -35px
+      left 40px
+      border 13px solid pink-color
+
+  .effect__description 
+    height 205px
+    width 56% //530px
+    margin-right 40px
+    margin-top 92px
+
+  .effect__headline 
+    font-weight 700
+    font-size 30px
+    line-height 30px
+    margin-bottom 25px
+
+  .effect__paragraph 
+    font-size 18px
+    line-height 30px
+    margin-bottom 30px
+
+  .effect__link
+    line-height 30px
+    font-size 18px
+
+  .review 
+    margin-bottom 45px
+    padding 0px 10.8333%//130px
+
+  .review::before 
+    content ''
+    display block
+    width 85px
+    height 64px
+    margin 0 auto
+    margin-bottom 52px
+    background-image url(sprite)
+    background-position 0 -160.45px
+    background-repeat no-repeat
+    background-size 85px 425px
+
+  .review__recall 
+    width 72% //677px
+    height 89px
+    line-height 30px
+    font-size 18px
+    margin-bottom 37px
+
+  .review__author
+    font-weight 700
+    font-size 24px
+    margin-bottom 5px
+    line-height 30px
+
+  
+  .review-prew 
+    width 22px
+    height 42px
+    top 140px
+    left 10.833%//130px
+        
+    &:before
+      width 26px
+      height 26px
+      border 2px solid #c2c6ca
+      border-bottom none
+      border-right none
+      transform rotate(-45deg)
+      top 8px
+      left 5px
+
+  .review-next 
+    width 22px
+    height 42px
+    top 140px
+    right 10.833%//130px
+        
+    &:before
+      width 26px
+      height 26px
+      border 2px solid #c2c6ca
+      border-bottom none
+      border-left  none
+      transform rotate(45deg)
+      top 8px
+      right 5px
+
+  .price 
+    height 530px
+    padding 153px 10.833%//130px
+
+  .price::after 
+    position absolute
     top 0
+    left 0
+    content ''
+    display block
     width 0
     height 0
-    margin 0 auto
-    border-top 125px solid #fff
-    border-left 50vw solid transparent
+    border 45px solid #fff
+    border-left 50vw solid #fff
     border-right 50vw solid transparent
+    border-bottom 45px solid transparent
 
-.main-footer 
-  padding 50px 10.8333% 85px
-  vertical-align middle
+  .price-table 
+    height 281px
 
-.logo--footer 
-  display inline-block
-  width 146px
-  height 40px
-  margin-bottom 10px
-  background-color rgba(0,0,0,0.5)
-  margin-right 25% //235px
+  .price-table__headline th 
+    font-weight 700
+    font-size 18px
+    line-height 30px
 
-.social-btn 
-  display inline-block
-  width 18.83% //177px
-  height 51px
-  margin-top 23px
+  .price-table__headline span
+    font-weight 300
+    font-size 24px
+    line-height 30px
 
-.social-btn .social-btn__twitter 
-  display inline-block
-  color transparent
-  width 51px
-  height 51px
-  overflow hidden
-  border-radius 50%
-  border 3px solid #f2f2f2
-  margin-right 6.77966% //12px
+  .price-table__headline .hit::before 
+    left -27px
+    top 5px
+    width 104px
+    height 32px
+    font-size 18px
+    font-weight 300
+    transform rotate(-45deg)
 
-.social-btn .social-btn__facebook 
-  display inline-block
-  color transparent
-  width 51px
-  height 51px
-  overflow hidden
-  border-radius 50%
-  border 3px solid #f2f2f2
-  margin-right 6.77966% //12px
+  .price-table__row td:first-child 
+    padding-left 20px
+    font-size 20px
+    line-height 30px
+    width 22.34% //210px
 
-.social-btn .social-btn__youtube 
-  display inline-block
-  color transparent
-  width 51px
-  height 51px
-  overflow hidden
-  border-radius 50%
-  border 3px solid #f2f2f2
+  .price-table__row .price-table__cell--check::after
+      width 29px
+      height 20px
+      top 50%
+      right 50%
+      margin-top -10px
+      margin-right -14.5px
+      background-image url(sprite)
+      background-position 0 -234.35px
+      background-size 85px 425px
 
-.copywright 
-  display inline-block
-  float right
-  height 51px
-  font-size 18px
-  line-height 51px
-  margin-top 25px
+  .price-table__row .price-table__cell--cross::after
+      width 26px
+      height 26px
+      top 50%
+      right 50%
+      margin-top -13px
+      margin-right -13px
+      background-image url(sprite)
+      background-position 0 -261.25px
+      background-size 85px 425px
 
-.copywright__creator 
-  display inline-block
-  color transparent
-  height 30px
-  width 27px
-  background-color rgba(210,40,86,0.5)
-  margin-left 10px
-  margin-right 10px
-  margin-bottom -6px
-  overflow hidden
+  .contacts
+    padding-top 65px
 
-.copywright__customer 
-  display inline-block
-  color transparent
-  height 33px
-  width 27px
-  background-color rgba(210,40,86,0.5)
-  margin-left 10px
-  margin-bottom -8px
-  overflow hidden
+  .contacts__headline 
+    font-size 50px
+    line-height 60px
+    font-weight 300
+    width 40% //480px
+    margin-bottom 58px
 
+  .contacts__tel 
+    font-weight 700
+    font-size 18px
+    line-height 18px
+    width 15.42% //185px
+    margin-right 7.5% //90px
+
+  .contacts__tel span 
+    font-weight 700    
+    margin-bottom 29px
+
+  .contacts__tel a 
+    font-weight 300
+    font-size 24px
+    line-height 28px
+
+  .contacts__address 
+    font-weight 700
+    font-size 18px
+    line-height 18px
+    width 22.5% //270px
+    margin-right 7.5% //90px
+
+  .contacts__address span 
+    font-weight 700
+    margin-bottom 29px
+
+  .contacts__address a    
+    font-weight 300
+    font-size 24px
+    line-height 28px
+
+  .contacts__email 
+    font-weight 700
+    font-size 18px
+    line-height 18px
+    width 15.83% //190px
+
+  .contacts__email span 
+    font-weight 700
+    margin-bottom 29px
+
+  .contacts__email a
+    font-weight 300
+    font-size 24px
+    line-height 28px
+
+  .contacts__map
+    height 522px
+
+    iframe
+      height 522px
+
+    &:before
+      content ''
+      display block
+      position absolute
+      top 0
+      width 0
+      height 0
+      margin 0 auto
+      border-top 125px solid #fff
+      border-left 50vw solid transparent
+      border-right 50vw solid transparent
+
+  .main-footer 
+    padding 50px 10.8333% 85px
+    vertical-align middle
+
+  .logo--footer 
+    width 146px
+    height 40px
+    margin-bottom 10px
+    margin-right 25% //235px
+    background-image url(logo-sprite)
+    
+  .social-btn
+    width 18.83% //177px
+    height 51px
+    margin-top 23px
+
+  .social-btn .social-btn__twitter 
+    width 51px
+    height 51px
+    border 3px solid #f2f2f2
+    margin-right 6.77966% //12px
+    
+    &:after
+      width 17px
+      height 14.16px
+      left 50%
+      margin-left -8.5px      
+      background-image url(sprite)
+      background-position 0 -293.25px
+      background-size 85px 425px
+
+  .social-btn .social-btn__facebook 
+    width 51px
+    height 51px
+    border 3px solid #f2f2f2
+    margin-right 6.77966% //12px
+    
+    &:after      
+      width 9px
+      height 19.6px
+      left 50%
+      margin-left -4.5px
+      margin-top -2px
+      background-image url(sprite)
+      background-position 0 -313.2px
+      background-size 85px 425px
+
+  .social-btn .social-btn__youtube 
+    width 51px
+    height 51px
+    border 3px solid #f2f2f2
+    
+    &:after
+      width 15px
+      height 14.29px
+      left 50%
+      margin-left -8.5px
+      background-image url(sprite)
+      background-position 0 -339.3px
+      background-size 85px 425px
+
+  .copywright
+    height 51px
+    font-size 18px
+    line-height 51px
+    margin-top 25px
+
+  .copywright__creator 
+    height 30px
+    width 27px
+    margin-left 10px
+    margin-right 10px
+    margin-bottom -10px
+    background-image url(sprite)
+    background-position 0 -356.3px
+    background-size 85px 425px
+
+  .copywright__customer
+    height 33px
+    width 27px
+    margin-left 10px
+    margin-bottom -11px
+    background-image url(sprite)
+    background-position 0 -390.5px
+    background-size 85px 425px
+    
+    
+  @media (min-resolution: 144dpi ), (min-resolution: 1.5dppx )
+    .main-header
+      background-image url("file:///D:/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B/Pink/dist/images/background-3@2x.jpg")
+      background-size cover
+    
+    .header-body
+      background-image url("file:///D:/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B/Pink/dist/images/iphone-hand-3@2x.png")
+      background-size 1050px 645px
+      background-position right
+      background-repeat no-repeat
+      
+    .header-body:after
+      background-image none
+      
+    .info-img1
+      background-image url("file:///D:/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B/Pink/dist/images/iphone-screen-3-1@2x.png")
+      
+    .info-img2
+      background-image url("file:///D:/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B/Pink/dist/images/iphone-screen-3-2@2x.png")
+      
+    .info-img3
+      background-image url("file:///D:/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B/Pink/dist/images/iphone-screen-3-3@2x.png")
+      
+    .logo
+      background-image url("file:///D:/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B/Pink/dist/images/logo-sprite-3@2.png")
+      background-size 100%
+      
+    .logo--footer
+      background-image url("file:///D:/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B/Pink/dist/images/logo-sprite-3@2.png")
+      background-size 100%
+
+
+
+
+@media screen and (min-width:1440px)
+  body 
+    width 100%
+    max-width 2000px
+    font-size 18px
+    line-height 18px
+
+  .main-header    
+    background-image url("file:///D:/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B/Pink/dist/images/background-4@1x.jpg")    
+
+  .header-head 
+    min-height 110px
+    padding 27px 17.3611% 43px //250px
+    
+  .logo 
+    background-image url("file:///D:/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B/Pink/dist/images/logo-sprite-3@1.png")
+    
+  .main-menu 
+    min-width 60%
+
+  .main-menu__btn--hide 
+    display none
+
+  .main-menu__item
+    display inline-block
+    font-size 18px
+    line-height 18px
+    margin-left 66px
+    margin-top 21px    
+    
+    &:hover
+      border-bottom 13px solid transparent
+      box-shadow 0 2px 0 0 #fff
+      cursor pointer
+      
+    &:active
+      border-bottom none
+      box-shadow none
+      opacity 0.3
+
+    &:first-child
+      margin-left 0
+
+  .header-body 
+    padding 0 17.36111% //250px
+    background-image url("file:///D:/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B/Pink/dist/images/iphone-hand-3@1x.png")
+    background-repeat no-repeat
+    background-size 1050px 645px
+    background-position 19.5vw
+    padding-bottom 120px
+
+  .header-body__content 
+    margin-top 120px
+    width 35%
+    margin-left  -1.5%
+
+  .header-body__tagline 
+    width 77%
+    height 170px
+    font-size 50px
+    line-height 58px
+    font-weight 300
+    margin-bottom 60px
+
+  .header-body__btn 
+    font-size 20px
+    line-height 23px
+    font-weight 700
+    padding 15px 13.33%
+    margin-bottom 66px
+
+  .header-body__social-btn 
+    width 68.3333%
+    height 57px
+    margin-bottom 58px
+
+  .btn-apple
+    width 46px
+    height 57px
+    margin-right 17.56%
+    background-image url(sprite)
+    background-position 0 0
+    background-size 85px 425px
+
+  .btn-android 
+    width 42px
+    height 48px
+    margin-right 17.56%
+    background-image url(sprite)
+    background-position 0px -59.26px
+    background-size 85px 425px
+
+  .btn-windows
+    width 44px
+    height 42px
+    margin-bottom 3px
+    background-image url(sprite)
+    background-position 0px -112.2px
+    background-size 85px 425px
+
+  .header-body__note 
+    font-size 18px
+    line-height 24px
+    font-weight 300
+
+  .info
+    padding-top 79px
+    padding-bottom 67px
+
+  .info__headline
+    font-size 50px
+    line-height 58px
+    font-weight 300
+
+  .info__subheadline 
+    display block
+    font-size 50px
+    line-height 58px
+    font-weight 300
+    width 35%
+    margin-bottom 85px
+
+  .info-columns 
+    padding 0 19.444% //280px
+    height 564px
+    font-size 18px
+    line-height 30px
+    margin-bottom 0
+    
+    p
+      margin 0
+
+  .info-columns::after 
+    position absolute
+    top 0
+    left 0
+    content ''
+    display block
+    width 0
+    height 0
+    border-top 45px solid #fff
+    border-left 50vw solid #fff
+    border-right 50vw solid transparent
+    border-bottom 45px solid transparent
+
+  .info__column1 
+    width 26.7% //235px 
+    float left
+    margin 0
+    margin-right 10.52%
+    text-align center
+
+  .info__column2 
+    width 25.56% //225px
+    float left
+    margin 0
+    text-align center
+
+  .info__column3 
+    width 26.7% //235px
+    float right
+    margin 0
+    text-align center
+
+  .column__headline 
+    color #000
+    font-weight 700
+    line-height 30px
+    font-size 30px
+    margin-bottom 23px
+
+  .info-img1 
+    display block
+    margin-bottom 60px
+    position relative
+    height 300px
+    background-image url("file:///D:/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B/Pink/dist/images/iphone-screen-3-1@1x.png")
+    background-position center
+    background-size 292px 300px
+    background-repeat no-repeat
+    z-index 3
+
+  .info-img1::after 
+    content ''
+    display block
+    position absolute
+    bottom -7px
+    left -1vw
+    width 17vw //245px
+    height 6px
+    border-radius 50%
+    box-shadow 0 -5px 5px 0px #ccc
+
+  .info-img2 
+    display block
+    margin-bottom 60px
+    position relative
+    height 300px
+    background-image url("file:///D:/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B/Pink/dist/images/iphone-screen-3-2@1x.png")
+    background-position center
+    background-size 292px 300px
+    background-repeat no-repeat
+    z-index 3
+
+  .info-img2::after 
+    content ''
+    display block
+    position absolute
+    bottom -7px
+    left -1vw
+    width 17vw //245px
+    height 6px
+    border-radius 50%
+    box-shadow 0 -5px 5px 0px #ccc
+
+  .info-img3 
+    display block
+    margin-bottom 60px
+    position relative
+    height 300px
+    background-image url("file:///D:/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B/Pink/dist/images/iphone-screen-3-3@1x.png")
+    background-position center
+    background-size 292px 300px
+    background-repeat no-repeat
+    z-index 3
+
+  .info-img3::after 
+    content ''
+    display block
+    position absolute
+    bottom -7px
+    left -1vw
+    width 17vw //245px
+    height 6px
+    border-radius 50%
+    box-shadow 0 -5px 5px 0px #ccc
+
+  .effect 
+    padding 0 17.36%//250px
+    height 475px
+    background-color lightgray
+    padding-top 62px
+
+  .effect__diagram
+    height 345px
+    width 300px
+    
+    svg
+      height 345px
+      width 300px
+      
+    p
+      height 220px
+      width 220px
+      padding-top 30px
+      font-weight 700
+      font-size 120px
+      line-height 120px
+      top -35px
+      left 40px
+      border 13px solid pink-color
+
+  .effect__description 
+    height 205px
+    width 58%
+    margin-top 92px
+
+  .effect__headline 
+    font-weight 700
+    font-size 30px
+    line-height 30px
+    margin-bottom 25px
+
+  .effect__paragraph 
+    font-size 18px
+    line-height 30px
+    margin-bottom 30px
+
+  .effect__link
+    line-height 30px
+    font-size 18px
+
+  .review 
+    margin-bottom 45px
+
+  .review::before 
+    content ''
+    display block
+    width 85px
+    height 64px
+    margin 0 auto
+    margin-bottom 52px
+    background-image url(sprite)
+    background-position 0 -160.45px
+    background-repeat no-repeat
+    background-size 85px 425px
+
+  .review__recall 
+    width 47% //677px
+    height 89px
+    line-height 30px
+    font-size 18px
+    margin-bottom 37px
+
+  .review__author
+    font-weight 700
+    font-size 24px
+    margin-bottom 5px
+    line-height 30px
+
+  
+  .review-prew 
+    width 22px
+    height 42px
+    top 140px
+    left 17.3611%//250px
+        
+    &:before
+      width 26px
+      height 26px
+      border 2px solid #c2c6ca
+      border-bottom none
+      border-right none
+      transform rotate(-45deg)
+      top 8px
+      left 5px
+
+  .review-next 
+    width 22px
+    height 42px
+    top 140px
+    right 17.3611%//250px
+        
+    &:before
+      width 26px
+      height 26px
+      border 2px solid #c2c6ca
+      border-bottom none
+      border-left  none
+      transform rotate(45deg)
+      top 8px
+      right 5px
+
+  .price 
+    height 530px
+    padding 153px 17.36%//250px
+
+  .price::after 
+    position absolute
+    top 0
+    left 0
+    content ''
+    display block
+    width 0
+    height 0
+    border 45px solid #fff
+    border-left 50vw solid #fff
+    border-right 50vw solid transparent
+    border-bottom 45px solid transparent
+
+  .price-table 
+    height 281px
+
+  .price-table__headline th 
+    font-weight 700
+    font-size 18px
+    line-height 30px
+
+  .price-table__headline span
+    font-weight 300
+    font-size 24px
+    line-height 30px
+
+  .price-table__headline .hit::before 
+    left -27px
+    top 5px
+    width 104px
+    height 32px
+    font-size 18px
+    font-weight 300
+    transform rotate(-45deg)
+
+  .price-table__row td:first-child 
+    padding-left 20px
+    font-size 20px
+    line-height 30px
+    width 26.59% //234px
+
+  .price-table__row .price-table__cell--check::after
+      width 29px
+      height 20px
+      top 50%
+      right 50%
+      margin-top -10px
+      margin-right -14.5px
+      background-image url(sprite)
+      background-position 0 -234.35px
+      background-size 85px 425px
+
+  .price-table__row .price-table__cell--cross::after
+      width 26px
+      height 26px
+      top 50%
+      right 50%
+      margin-top -13px
+      margin-right -13px
+      background-image url(sprite)
+      background-position 0 -261.25px
+      background-size 85px 425px
+
+  .contacts
+    padding-top 76px
+
+  .contacts__headline 
+    font-size 50px
+    line-height 60px
+    font-weight 300
+    width 51.82% //456px
+    margin-bottom 58px
+
+  .contacts__tel 
+    font-weight 700
+    font-size 18px
+    line-height 18px
+    width 12.847% //185px
+    margin-right 6.55% //95px
+
+  .contacts__tel span 
+    font-weight 700    
+    margin-bottom 29px
+
+  .contacts__tel a 
+    font-weight 300
+    font-size 24px
+    line-height 28px
+
+  .contacts__address 
+    font-weight 700
+    font-size 18px
+    line-height 18px
+    width 18.75% //270px
+    margin-right 6.55% //95px
+
+  .contacts__address span 
+    font-weight 700
+    margin-bottom 29px
+
+  .contacts__address a    
+    font-weight 300
+    font-size 24px
+    line-height 28px
+
+  .contacts__email 
+    font-weight 700
+    font-size 18px
+    line-height 18px
+    width 12.847% //185px
+
+  .contacts__email span 
+    font-weight 700
+    margin-bottom 29px
+
+  .contacts__email a
+    font-weight 300
+    font-size 24px
+    line-height 28px
+
+    
+  .contacts__map
+    height 507px
+
+    iframe
+      height 507px
+
+    &:before
+      content ''
+      display block
+      position absolute
+      top -2px
+      left 5.9vw
+      width 0
+      height 0
+      border-top 125px solid #fff
+      border-left 44.1vw solid transparent
+      border-right 44.1vw solid transparent
+
+  .main-footer 
+    padding 50px 17.3611% 85px
+    vertical-align middle
+
+  .logo--footer 
+    width 146px
+    height 40px
+    margin-bottom 10px
+    margin-right 25% //235px
+    background-image url("file:///D:/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B/Pink/dist/images/logo-sprite-3@1.png")
+    
+  .social-btn
+    width 18.83% //177px
+    height 51px
+    margin-top 23px
+
+  .social-btn .social-btn__twitter 
+    width 51px
+    height 51px
+    border 3px solid #f2f2f2
+    margin-right 6.77966% //12px
+    
+    &:after
+      width 17px
+      height 14.16px
+      left 50%
+      margin-left -8.5px      
+      background-image url(sprite)
+      background-position 0 -293.25px
+      background-size 85px 425px
+
+  .social-btn .social-btn__facebook 
+    width 51px
+    height 51px
+    border 3px solid #f2f2f2
+    margin-right 6.77966% //12px
+    
+    &:after      
+      width 9px
+      height 19.6px
+      left 50%
+      margin-left -4.5px
+      margin-top -2px
+      background-image url(sprite)
+      background-position 0 -313.2px
+      background-size 85px 425px
+
+  .social-btn .social-btn__youtube 
+    width 51px
+    height 51px
+    border 3px solid #f2f2f2
+    
+    &:after
+      width 15px
+      height 14.29px
+      left 50%
+      margin-left -8.5px
+      background-image url(sprite)
+      background-position 0 -339.3px
+      background-size 85px 425px
+
+  .copywright
+    height 51px
+    font-size 18px
+    line-height 51px
+    margin-top 25px
+
+  .copywright__creator 
+    height 30px
+    width 27px
+    margin-left 10px
+    margin-right 10px
+    margin-bottom -10px
+    background-image url(sprite)
+    background-position 0 -356.3px
+    background-size 85px 425px
+
+  .copywright__customer
+    height 33px
+    width 27px
+    margin-left 10px
+    margin-bottom -11px
+    background-image url(sprite)
+    background-position 0 -390.5px
+    background-size 85px 425px
+    
+    
+  @media (min-resolution: 144dpi ), (min-resolution: 1.5dppx )
+    .main-header
+      background-image url("file:///D:/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B/Pink/dist/images/background-4@2x.jpg")
+      background-size cover
+    
+    .header-body
+      background-image url("file:///D:/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B/Pink/dist/images/iphone-hand-3@2x.png")
+      background-size 1050px 645px
+      background-position right
+      background-repeat no-repeat
+      
+    .header-body:after
+      background-image none
+      
+    .info-img1
+      background-image url("file:///D:/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B/Pink/dist/images/iphone-screen-3-1@2x.png")
+      
+    .info-img2
+      background-image url("file:///D:/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B/Pink/dist/images/iphone-screen-3-2@2x.png")
+      
+    .info-img3
+      background-image url("file:///D:/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B/Pink/dist/images/iphone-screen-3-3@2x.png")
+      
+    .logo
+      background-image url("file:///D:/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B/Pink/dist/images/logo-sprite-3@2.png")
+      background-size 100%
+      
+    .logo--footer
+      background-image url("file:///D:/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B/Pink/dist/images/logo-sprite-3@2.png")
+      background-size 100%
+      
