@@ -5,13 +5,17 @@ head
   title PINK   
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,700,800&subset=cyrillic" rel="stylesheet">
   link(rel="stylesheet", href="file:///D:/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B/Pink/dist/css/style.css")
+  script(src="file:///D:/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B/Pink/dist/scripts/jquery-3.1.0.min.js")
 body
   header.main-header
     div.header-head
       div.logo
       nav.main-menu
+       div.main-menu__btn-burger.main-menu__btn--hide
+           <svg version="1.0" id="burger" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 49.945 24.007" enable-background="new 0 0 49.945 24.007" xml:space="preserve" id="burger"> <g id="miu"><g id="editor_list_view_hambuger_menu_glyph"> <g> <path id="path-1" fill="#ffffff" d="M1.137,0C0.51,0,0,0.428,0,1.01v1.981c0,0.558,0.494,1.01,1.138,1.01h47.671 c0.628,0,1.138-0.428,1.138-1.01V1.01c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,10.003C0.51,10.003,0,10.431,0,11.013v1.98 c0,0.557,0.494,1.01,1.138,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01v-1.98c0-0.558-0.494-1.01-1.138-1.01H1.137z  M1.137,20.005C0.51,20.005,0,20.434,0,21.016v1.981c0,0.557,0.494,1.01,1.138,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01 v-1.981c0-0.558-0.494-1.011-1.138-1.011H1.137z"/> </g> <g> <path id="path-1_1_" fill="ffffff" d="M1.137,0C0.51,0,0,0.428,0,1.01v1.981c0,0.558,0.494,1.01,1.138,1.01h47.671 c0.628,0,1.138-0.428,1.138-1.01V1.01c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,10.003C0.51,10.003,0,10.431,0,11.013v1.98 c0,0.557,0.494,1.01,1.138,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01v-1.98c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,20.005C0.51,20.005,0,20.434,0,21.016v1.981c0,0.557,0.494,1.01,1.138,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01 v-1.981c0-0.558-0.494-1.011-1.138-1.011H1.137z"/> </g> </g> </g> </svg>
+       div.main-menu__btn-cross.main-menu__btn--hide
+           <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"width="26.752px" height="26.752px" viewBox="0 0 26.752 26.752" xml:space="preserve" id="cross" fill="#ffffff"><path d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439 c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121 c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439 s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z"/> </svg>
        ul
-         li.main-menu__btn.main-menu__btn--hide
          li.main-menu__item.menu__item-hide Информация
          li.main-menu__item.menu__item-hide Возможности
          li.main-menu__item.menu__item-hide Отзывы
@@ -77,6 +81,13 @@ body
              span.review__author Анна Орлова
              span.review__author-info 23 года, дизайнер
         button.review-next
+        div.review__toggle          
+          input(type="radio", name="toogle", value="review1", id="review1")
+          label(for="review1")          
+          input(type="radio", name="toogle", value="review2", checked, id="review2")
+          label(for="review2")          
+          input(type="radio", name="toogle", value="review3", id="review3")
+          label(for="review3")
         
       article.price
         table.price-table
@@ -103,6 +114,13 @@ body
             td.price-table__cell--cross
             td.price-table__cell--cross
             td.price-table__cell--check
+        div.price__toggle          
+          input(type="radio", name="toogle", value="row1", id="row1")
+          label(for="row1")          
+          input(type="radio", name="toogle", value="row2", checked, id="row2")
+          label(for="row2")          
+          input(type="radio", name="toogle", value="row3", id="row3")
+          label(for="row3")
       
       article.contacts
         h4.contacts__headline Остались вопросы? Свяжитесь с нами!
@@ -121,9 +139,11 @@ body
   footer.main-footer
         div.logo--footer
         div.social-btn
-          a(href="#").social-btn__twitter Twitter
-          a(href="#").social-btn__facebook Facebook
-          a(href="#").social-btn__youtube YouTube
+          div.container
+            a(href="#").social-btn__twitter Twitter
+            a(href="#").social-btn__facebook Facebook
+            a(href="#").social-btn__youtube YouTube
         div.copywright 
             span Website by <a href="#" class="copywright__creator">a</a> for <a href="#" class="copywright__customer"> HTMLAcademy</a>
-  script(src="./dist/script/sprite.js")
+  script(src="file:///D:/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B/Pink/dist/scripts/script.js")
+  
