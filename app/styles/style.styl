@@ -700,6 +700,10 @@ body
   .review-next 
     display none
     
+    
+  .review__item-hide
+    display none
+    
   .review__toggle
     display block
     height 3.75vw    
@@ -790,7 +794,7 @@ body
     line-height 9.375vw
     
     background-color #283645
-    border 2px solid #e5e5e5
+    border 0.625vw solid #e5e5e5
     
   .price-table__headline .invisible-cell 
     background-color #f2f2f2
@@ -1978,12 +1982,13 @@ body
   body 
     width 100%
     min-width 1200px
+    
     font-size 1.5vw
     line-height 1.5vw
 
   .main-header    
     width 100%
-    min-height 66px
+    height 71.1666vw
 
     color #fff
 
@@ -1994,35 +1999,50 @@ body
     background-image url("file:///D:/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B/Pink/dist/images/background-3@1x.jpg")    
 
   .header-head 
-    min-height 9.1666vw
+    height 9.1666vw
     padding 2.25vw 10.83333% 3.58vw
+    
     background-color rgba(0,0,0,0.4)
     clear both
     
   .logo
     float left
-    width 146px
-    height 40px
-    background-image url("file:///D:/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B/Pink/dist/images/logo-sprite-3@1.png")    
-
+    width 12.1666vw
+    height 3.333vw
+    
+    background-image url("file:///D:/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B/Pink/dist/images/logo-sprite-3@1.png")
+    background-repeat no-repeat
+    background-position top
+    background-size 100% auto
+    
+    &:hover
+      background-position bottom
+      
+    &:active
+      background-position top
+      opacity 0.5
     
   .main-menu
     float right
     min-width 60%
 
-  .main-menu__btn--hide
+  .main-menu__btn-burger
+    display none
+    
+  .main-menu__btn-cross
     display none
 
   .main-menu__item
     display inline-block
-    font-size 18px
-    line-height 18px
-    margin-left 66px
-    margin-top 21px    
+    margin-left 5.5vw
+    margin-top 1.75vw
+    
+    font-size 1.5vw
+    line-height 1.5vw
     
     &:hover
-      border-bottom 13px solid transparent
-      box-shadow 0 2px 0 0 #fff
+      border-bottom 0.8333vw solid transparent
+      box-shadow 0 0.1666vw 0 0 #fff
       cursor pointer
       
     &:active
@@ -2035,47 +2055,52 @@ body
 
   .header-body
     position relative
+    width 100%
+    height 62vw
     margin 0
     padding 0 10.83333%
-    padding-bottom 121px
+    
     background-image url("file:///D:/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B/Pink/dist/images/iphone-hand-3@1x.png")
-    background-position 13.333vw
-    background-size 1050px 645px
+    background-position bottom
+    background-size 87.5vw 53.75vw
     background-repeat no-repeat
 
   .header-body__content
     position relative
+    width 25vw
+    margin 0
+    padding-top 9.666vw
+    
     text-align center
-    margin-top 110px
-    width 35%
-    margin-left  -1.5%
-    padding-bottom 121px
 
   .header-body__tagline
-    text-align center
     display block
+    width 19.58333vw
+    height 14.58333vw
     margin 0 auto
-    width 77%
-    height 170px
-    font-size 50px
-    line-height 58px
+    margin-bottom 4.08333vw
+    
+    text-align center
+    font-size 4.1666vw
+    line-height 4.8333vw
     font-weight 300
-    margin-bottom 60px
 
   .header-body__btn
     display block
+    padding 1.25vw 13.33%
     margin 0 auto
-    font-size 20px
-    line-height 23px
+    margin-bottom 5.5vw
+    
+    font-size 1.58333vw
+    line-height 1.58333vw
     font-weight 700
-    padding 15px 13.33%
-    margin-bottom 66px
-    background-color transparent
     text-align center
     color #fff
+    
+    background-color transparent
 
-    border 3px solid #fff
-    border-radius 30px
+    border 0.25vw solid #fff
+    border-radius 2.1666vw
 
     &:hover
       background-color #fff
@@ -2084,48 +2109,50 @@ body
     &:active
       color rgba(#d22856, 0.3)
 
-  .header-body__social-btn 
-    margin 0 auto
-    width 68.3333%
+  .header-body__social-btn
+    width 205px
     height 57px
-    margin-bottom 58px
+    margin 0 auto
+    margin-bottom 4.8333vw
 
   .btn-apple
     display inline-block
-    background-repeat no-repeat
     width 46px
     height 57px
     margin-right 17.56%
+    
     background-image url(sprite)
+    background-repeat no-repeat
     background-position 0 0
     background-size 85px 425px
 
   .btn-android
     display inline-block
-    background-repeat no-repeat
     width 42px
     height 48px
     margin-right 17.56%
+    
     background-image url(sprite)
+    background-repeat no-repeat
     background-position 0px -59.26px
     background-size 85px 425px
 
   .btn-windows
     display inline-block
-    background-repeat no-repeat
-    display inline-block
     width 44px
     height 42px
     margin-bottom 3px
+    
     background-image url(sprite)
+    background-repeat no-repeat
     background-position 0px -112.2px
     background-size 85px 425px
     background-repeat no-repeat
 
   .header-body__note
     display block
-    font-size 18px
-    line-height 24px
+    font-size 1.5vw
+    line-height 2vw
     font-weight 300
     
   .main-content 
@@ -2133,211 +2160,233 @@ body
     
   .info
     width 100%
-    padding-top 68px
-    padding-bottom 67px
+    padding-top 5.91666vw
+    margin-bottom 6vw
 
   .info__headline
-    text-align center
     margin 0 auto
-    font-size 50px
-    line-height 58px
+    
+    text-align center
+    font-size 4.1666vw
+    line-height 4.8333vw
     font-weight 300
 
-  .info__subheadline 
-    text-align center
-    margin 0 auto
+  .info__subheadline
     display block
-    font-size 50px
-    line-height 58px
+    width 35vw
+    margin 0 auto
+    margin-bottom 5.58333vw
+    
+    text-align center
+    font-size 4.1666vw
+    line-height 4.8333vw
     font-weight 300
-    width 35%
-    margin-bottom 80px
 
   .info-columns
     position relative
-    clear both
     width 100%
+    height 47.08333vw
+    padding 0 13.333vw
+    margin 0
+    clear both
+    
     background-color #f2f2f2
-    padding 0 13.5% //162px
-    height 565px
-    font-size 18px
-    line-height 30px
-    padding-bottom 0px
-    margin-bottom 0
+    font-size 1.5vw
+    line-height 2.5vw
     
     p
       margin 0
 
-  .info-columns::after 
-    position absolute
-    top 0
-    left 0
+  .info-columns::after
     content ''
     display block
     width 0
     height 0
-    border-top 45px solid #fff
-    border-left 50vw solid #fff
-    border-right 50vw solid transparent
-    border-bottom 45px solid transparent
+    
+    position absolute
+    top 0
+    left 0
+    
+    border-top 47.5px solid #fff
+    border-left 48.5vw solid #fff
+    border-right 48.5vw solid transparent
+    border-bottom 47.5px solid transparent
 
   .info__column1 
-    width 27.4% //240px 
     float left
-    margin-right 10.27%
+    width 20vw
+    margin-right 6.666vw
     text-align center
 
-  .info__column2 
-    width 25.68% //225px
+  .info__column2
     float left
+    width 20vw
     text-align center
 
-  .info__column3 
-    width 26.83% //235px
+  .info__column3
     float right
+    width 20vw
     text-align center
 
   .column__headline 
+    margin-bottom 2vw
+    
     color #000
     font-weight 700
-    line-height 30px
-    font-size 30px
-    margin-bottom 25px
+    line-height 2.5vw
+    font-size 2.5vw
 
   .info-img1 
     display block
-    margin-bottom 55px
+    height 25vw
+    margin-bottom 4.91666vw
     position relative
-    height 300px
+    
     background-image url("file:///D:/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B/Pink/dist/images/iphone-screen-3-1@1x.png")
     background-position center
-    background-size 292px 300px
+    background-size 24.333vw 25vw
     background-repeat no-repeat
+    
     z-index 3
 
   .info-img1::after 
     content ''
     display block
+    width 22.5vw
+    height 0.5vw
+    
     position absolute
-    bottom -7px
-    left -1.41667vw //-17px
-    width 22.5vw //270px
-    height 6px
+    bottom -0.58333vw
+    left -1.41667vw
+    
     border-radius 50%
-    box-shadow 0 -5px 5px 0px #ccc
+    box-shadow 0 -4px 5px 0px rgba(#ccc, 0.6)
 
   .info-img2 
     display block
-    margin-bottom 55px
+    height 25vw
+    margin-bottom 4.91666vw
     position relative
-    height 300px
+    
     background-image url("file:///D:/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B/Pink/dist/images/iphone-screen-3-2@1x.png")
     background-position center
-    background-size 292px 300px
+    background-size 24.333vw 25vw
     background-repeat no-repeat
     z-index 3
 
   .info-img2::after 
     content ''
     display block
+    width 22.5vw
+    height 0.5vw
+    
     position absolute
-    bottom -7px
-    left -1.833vw //-22px
-    width 22.5vw //270px
-    height 6px
+    bottom -0.58333vw
+    left -1.41667vw
+    
     border-radius 50%
-    box-shadow 0 -5px 5px 0px #ccc
+    box-shadow 0 -4px 5px 0px rgba(#ccc, 0.6)
 
   .info-img3 
     display block
-    margin-bottom 55px
+    height 25vw
+    margin-bottom 4.91666vw
     position relative
-    height 300px
+    
     background-image url("file:///D:/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B/Pink/dist/images/iphone-screen-3-3@1x.png")
     background-position center
-    background-size 292px 300px
+    background-size 24.333vw 25vw
     background-repeat no-repeat
     z-index 3
 
   .info-img3::after 
     content ''
     display block
+    width 22.5vw
+    height 0.5vw
+    
     position absolute
-    bottom -7px
-    left -1.5vw //-18px
-    width 22.5vw //270px
-    height 6px
+    bottom -0.58333vw
+    left -1.41667vw
+    
     border-radius 50%
-    box-shadow 0 -5px 5px 0px #ccc
+    box-shadow 0 -4px 5px 0px rgba(#ccc, 0.6)
 
   .effect
     width 100%
+    height 39.5vw
+    padding 0 10.8333%
+    padding-top 5.1666vw
+    
     background-color #f2f2f2
     clear both
-    padding 0 10.8333%//130px
-    padding-top 62px
-    height 460px
 
   .effect__diagram
     position relative
     float left
-    height 345px
-    width 300px
+    width 25.1666vw
+    height 28.75vw
     
     svg
-      fill #eeeeee
-      height 345px
-      width 300px
+      fill #dedede
+      width 25.1666vw
+      height 28.75vw
       
     p
+      display block
+      width 18.333vw
+      height 18.333vw
+      padding-top 2.5vw
+      
       position absolute
-      box-sizing border-box
+      top -2.91666vw
+      left 3.333vw
+      
       text-align center
       vertical-align middle
-      color pink-color
-      display block
-      border-radius 50%
-      height 220px
-      width 220px
-      padding-top 30px
+      color pink-color      
       font-weight 700
-      font-size 120px
-      line-height 120px
-      top -35px
-      left 40px
-      border 13px solid pink-color
+      font-size 10vw
+      line-height 10vw
+      
+      box-sizing border-box
+      border 1.08333vw solid pink-color
+      border-radius 50%
 
   .effect__description
     float right
     height 17.0833vw
-    width 56%
-    margin-right 40px
-    margin-top 92px
+    width 47.75vw
+    margin-top 4.5vw
 
   .effect__headline 
     font-weight 700
-    font-size 30px
-    line-height 30px
-    margin-bottom 25px
+    font-size 2.5vw
+    line-height 2.5vw
+    margin-bottom 1.8333vw
 
   .effect__paragraph 
-    font-size 18px
-    line-height 30px
-    margin-bottom 30px
+    font-size 1.5vw
+    line-height 2.5vw
+    margin-bottom 2.5vw
 
   .effect__link
     color pink-color
     text-decoration underline
-    line-height 30px
-    font-size 18px
+    line-height 2.5vw
+    font-size 1.5vw
+    
+    &:hover
+      color item-color
 
   .review
     clear both
     width 100%
+    margin-bottom 2.8333vw
+    padding 0px 10.8333%
+    
     position relative
     text-align center
-    margin-bottom 45px
-    padding 0px 10.8333%//130px
 
   .review::before 
     content ''
@@ -2345,120 +2394,141 @@ body
     width 85px
     height 64px
     margin 0 auto
-    margin-bottom 52px
+    margin-bottom 4.333vw
+    
     background-image url(sprite)
     background-position 0 -160.45px
     background-repeat no-repeat
     background-size 85px 425px
 
   .review__recall
+    width 56.666vw
+    height 7.41666vw
     margin 0 auto
-    width 72% //677px
-    height 89px
-    line-height 30px
-    font-size 18px
-    margin-bottom 37px
+    margin-bottom 3.08333vw
+    
+    line-height 2.5vw
+    font-size 1.5vw
 
   .review__author
-    color #000
     display block
+    margin-bottom 0.5vw
+    
+    color #000
     font-weight 700
-    font-size 24px
-    margin-bottom 5px
-    line-height 30px
+    font-size 2vw
+    line-height 2.5vw
     
   .review__item-hide 
     display none
   
   .review-prew
     display inline-block
+    top 11.666vw
+    left 10.833%
+    
     position absolute
+    width 1.8333vw
+    height 3.5vw
+    
     border none
     background-color transparent
     cursor pointer
-    width 22px
-    height 42px
-    top 140px
-    left 10.833%//130px
         
     &:before
       content ''
       display block
+      width 2.1666vw
+      height 2.1666vw
+      
       position absolute
-      width 26px
-      height 26px
-      border 2px solid #c2c6ca
+      top 0.666vw
+      left 0.41666vw
+      
+      border 0.1666vw solid #c2c6ca
       border-bottom none
       border-right none
       transform rotate(-45deg)
-      top 8px
-      left 5px
 
   .review-next
     display inline-block
+    top 11.666vw
+    right 10.833%
+    
     position absolute
+    width 1.8333vw
+    height 3.5vw
+    
     border none
     background-color transparent
     cursor pointer
-    width 22px
-    height 42px
-    top 140px
-    right 10.833%//130px
         
     &:before
       content ''
       display block
+      width 2.1666vw
+      height 2.1666vw
+      
       position absolute
-      width 26px
-      height 26px
-      border 2px solid #c2c6ca
+      top 0.666vw
+      left 0.41666vw
+      
+      border 0.1666vw solid #c2c6ca
       border-bottom none
-      border-left  none
-      transform rotate(45deg)
-      top 8px
-      right 5px
+      border-right none
+      transform rotate(135deg)
+      
+  .review__toggle
+    display none
 
   .price
+    width 100%
+    height 44.1666vw
+    padding 12.75vw 10.833% 7.91666vw
+    
     background-color #f2f2f2
     position relative
-    height 530px
-    padding 153px 10.833%//130px
 
-  .price::after 
-    position absolute
-    top 0
-    left 0
+  .price::after
     content ''
     display block
     width 0
     height 0
-    border 45px solid #fff
-    border-left 50vw solid #fff
-    border-right 50vw solid transparent
-    border-bottom 45px solid transparent
+    
+    position absolute
+    top 0
+    left 0
+    
+    border 47.5px solid #fff
+    border-left 48.5vw solid #fff
+    border-right 48.5vw solid transparent
+    border-bottom 47.5px solid transparent
 
   .price-table
     width 100%
+    height 23.41666vw
+    
     text-align left
     vertical-align middle
     background-color #fff
+    
     border-collapse collapse
-    height 281px
   
   .price-table td 
-    border 2px solid #e5e5e5
+    border 0.1666vw solid #e5e5e5
     
   .price-table__headline 
     color #fff
     
   .price-table__headline th
-    background-color #283645
-    border 2px solid #e5e5e5
     text-align center
     text-transform uppercase
     font-weight 700
-    font-size 18px
-    line-height 30px
+    font-size 1.5vw
+    line-height 2.5vw
+    
+    background-color #283645
+    border 0.1666vw solid #e5e5e5
     
   .price-table__headline .invisible-cell 
     background-color #f2f2f2
@@ -2467,8 +2537,8 @@ body
   .price-table__headline span
     display block
     font-weight 300
-    font-size 24px
-    line-height 30px
+    font-size 2vw
+    line-height 2.5vw
 
   .price-table__headline .hit 
     position relative
@@ -2477,38 +2547,48 @@ body
   .price-table__headline .hit::before
     content 'хит'
     position absolute
+    left -2.25vw
+    top 0.6vw
+    
     display block
-    background-color #d22856
-    left -27px
-    top 5px
-    width 104px
-    height 32px
-    font-size 18px
+    width 8.58333vw
+    height 2.5vw
+    
+    font-size 1.166vw
+    line-height 2.5vw
     font-weight 300
+    
+    background-color #d22856
     transform rotate(-45deg)
 
-  .price-table__row td:first-child 
-    padding-left 20px
-    font-size 20px
-    line-height 30px
-    width 22.34% //210px
+  .price-table__row td:first-child
+    width 19.58333vw
+    padding-left 2vw
+    
+    font-size 1.666vw
+    line-height 2.5vw
 
   .price-table__row .price-table__cell--check 
     text-align center
     position relative
     
+    span
+      display none
+    
   .price-table__row .price-table__cell--check::after
     content ''
     display block
-    position absolute
-    background-repeat no-repeat
     width 29px
     height 20px
+    
+    position absolute
     top 50%
     right 50%
     margin-top -10px
     margin-right -14.5px
+    
     background-image url(sprite)
+    background-repeat no-repeat
     background-position 0 -234.35px
     background-size 85px 425px
 
@@ -2516,135 +2596,179 @@ body
     text-align center
     position relative
     
+    span
+      display none
+    
   .price-table__row .price-table__cell--cross::after
     content ''
     display block
-    position absolute
-    background-repeat no-repeat
     width 26px
     height 26px
+    
+    position absolute
     top 50%
     right 50%
     margin-top -13px
     margin-right -13px
+    
     background-image url(sprite)
+    background-repeat no-repeat
     background-position 0 -261.25px
     background-size 85px 425px
+    
+  .price__toggle
+    display none
 
   .contacts
     width 100%
+    padding-top 5.5vw
     text-align center
-    padding-top 65px
 
   .contacts__headline
-    text-align center
+    width 40%
     margin 0 auto
-    font-size 50px
-    line-height 60px
+    margin-bottom 5vw
+    
+    font-size 4.1666vw
+    line-height 5vw
     font-weight 300
-    width 40% //480px
-    margin-bottom 58px
+    text-align center
 
   .contacts__tel
     display inline-block
+    width 15.8333vw
+    margin-right 7.5vw
+    
     vertical-align top
     font-weight 700
-    font-size 18px
-    line-height 18px
-    width 15.42% //185px
-    margin-right 7.5% //90px
-
-  .contacts__tel span
-    display block
-    font-weight 700    
-    margin-bottom 29px
-
-  .contacts__tel a
-    color #d22856
-    display block
-    text-decoration none
-    font-weight 300
-    font-size 24px
-    line-height 28px
+    font-size 1.5vw
+    line-height 1.5vw
+    
+    span
+      display block
+      margin-bottom 2vw
+      font-weight 700
+      
+    a
+      display block
+      
+      text-decoration none
+      color #d22856
+      font-weight 300
+      font-size 2vw
+      line-height 2.41666vw
+      
+      &:hover
+        color item-color
+        text-decoration underline
+        
+      &:active
+        text-decoration none
+        opacity 0.5
 
   .contacts__address
     display inline-block
+    width 22.5vw
+    margin-right 7.5vw
+    
     vertical-align top
     font-weight 700
-    font-size 18px
-    line-height 18px
-    width 22.5% //270px
-    margin-right 7.5% //90px
-
-  .contacts__address span
-    display block
-    font-weight 700
-    margin-bottom 29px
-
-  .contacts__address a
-    color #d22856
-    display block
-    text-decoration none
-    font-weight 300
-    font-size 24px
-    line-height 28px
+    font-size 1.5vw
+    line-height 1.5vw
+    
+    span
+      display block
+      font-weight 700
+      margin-bottom 2vw
+      
+    a
+      display block
+      
+      text-decoration none
+      color #d22856
+      font-weight 300
+      font-size 2vw
+      line-height 2.41666vw
+      
+      &:hover
+        color item-color
+        text-decoration underline
+        
+      &:active
+        text-decoration none
+        opacity 0.5
 
   .contacts__email
     display inline-block
+    line-height 18px
+    width 15.83% //190px
+    
     vertical-align top
     font-weight 700
     font-size 18px
-    line-height 18px
-    width 15.83% //190px
-
-  .contacts__email span
-    display block
-    font-weight 700
-    margin-bottom 29px
-
-  .contacts__email a
-    color #d22856
-    display block
-    text-decoration none
-    font-weight 300
-    font-size 24px
-    line-height 28px
+    
+    span
+      display block
+      margin-bottom 2vw
+      font-weight 700
+      
+    a
+      display block
+      text-decoration none
+      color #d22856
+      font-weight 300
+      font-size 2vw
+      line-height 2.41666vw
+      
+      &:hover
+        color item-color
+        text-decoration underline
+        
+      &:active
+        text-decoration none
+        opacity 0.5
 
   .contacts__map
+    height 43.41666vw
     position relative
     background-color rgba(0,0,0,0.5)
-    height 522px
 
     iframe
       width 100%
-      height 522px
+      height 43.41666vw
 
     &:before
       content ''
       display block
-      position absolute
-      top 0
       width 0
       height 0
       margin 0 auto
-      border-top 125px solid #fff
-      border-left 50vw solid transparent
-      border-right 50vw solid transparent
+      
+      position absolute
+      top 0
+      
+      border-top 10.25vw solid #fff
+      border-left 49vw solid transparent
+      border-right 49vw solid transparent
+      
+      box-shadow 0 -2px 0 0 #fff
 
-  .main-footer 
-    padding 50px 10.8333% 85px
-    vertical-align middle
+  .main-footer
+    height 13.08333vw
+    padding 6vw 10.8333%
+    clear both
 
   .logo--footer
     display inline-block
+    width 12.1666vw
+    height 3.333vw
+    margin-right 19.58333vw
+    float left
+    
+    background-image url("file:///D:/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B/Pink/dist/images/logo-sprite-3@1.png")
     background-position bottom
     background-repeat no-repeat
-    background-size 100%
-    width 146px
-    height 40px
-    margin-bottom 10px
-    margin-right 25% //235px
-    background-image url(logo-sprite)
+    background-size 100% auto
     
     &:hover
     &:active
@@ -2652,19 +2776,27 @@ body
     
   .social-btn
     display inline-block
-    width 18.83% //177px
+    width 14.75vw
     height 51px
-    margin-top 23px
+    padding 0
+    float left
+    
+    .container
+      display block
+      width 177px
+      margin 0 auto
 
-  .social-btn .social-btn__twitter 
+  .social-btn .social-btn__twitter
+    display inline-block
     width 51px
     height 51px
-    border 3px solid #f2f2f2
-    margin-right 6.77966% //12px
-    display inline-block
+    margin-right 6.77966%
+    
     position relative
     color transparent
     overflow hidden
+    
+    border 3px solid #f2f2f2
     border-radius 50%
         
     &:hover
@@ -2677,25 +2809,31 @@ body
     &:after
       content ''
       display block
-      position absolute
-      background-repeat no-repeat
       width 17px
       height 14.16px
+      
+      position absolute
       left 50%
-      margin-left -8.5px      
+      top 50%
+      margin-left -8.5px
+      margin-top -7.8px
+      
       background-image url(sprite)
+      background-repeat no-repeat
       background-position 0 -293.25px
       background-size 85px 425px
 
-  .social-btn .social-btn__facebook 
+  .social-btn .social-btn__facebook
+    display inline-block
     width 51px
     height 51px
-    border 3px solid #f2f2f2
-    margin-right 6.77966% //12px
-    display inline-block
+    margin-right 6.77966%
+    
     position relative
     color transparent
     overflow hidden
+    
+    border 3px solid #f2f2f2
     border-radius 50%
         
     &:hover
@@ -2708,25 +2846,30 @@ body
     &:after
       content ''
       display block
-      position absolute
-      background-repeat no-repeat
       width 9px
       height 19.6px
+      
+      position absolute
+      top 50%
       left 50%
       margin-left -4.5px
-      margin-top -2px
+      margin-top -9.8px
+      
       background-image url(sprite)
+      background-repeat no-repeat
       background-position 0 -313.2px
       background-size 85px 425px
 
-  .social-btn .social-btn__youtube 
+  .social-btn .social-btn__youtube
+    display inline-block
     width 51px
     height 51px
-    border 3px solid #f2f2f2
-    display inline-block
     position relative
+    
     color transparent
     overflow hidden
+    
+    border 3px solid #f2f2f2
     border-radius 50%
         
     &:hover
@@ -2739,23 +2882,26 @@ body
     &:after
       content ''
       display block
-      position absolute
-      background-repeat no-repeat
       width 15px
       height 14.29px
+      
+      position absolute
       left 50%
-      margin-left -8.5px
+      top 50%
+      margin-left -7.5px
+      margin-top -7.145px
+      
       background-image url(sprite)
+      background-repeat no-repeat
       background-position 0 -339.3px
       background-size 85px 425px
 
   .copywright
     display inline-block
     float right
-    height 51px
-    font-size 18px
-    line-height 51px
-    margin-top 25px
+    height 2.75vw
+    font-size 1.5vw
+    line-height 2.75
 
   .copywright__creator
     display inline-block
