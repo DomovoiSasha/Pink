@@ -16,6 +16,9 @@ $(function(){
   var priceLabel2 = $('#price2-label');
   var priceLabel3 = $('#price3-label');
   var price = $('.price-table');
+  var nextBtn = $('.review-next');
+  var prewBtn = $('.review-prew');
+  var reviews = $('.review__item');
   
   
   $(burgerBtn).bind({
@@ -132,6 +135,54 @@ $(function(){
     if  ($('#row3').prop('checked')) {} else {
       $(price).css({"left":"-257.5vw",
                                "transition":"0.5s ease"});
+    }
+  });
+  
+  $(nextBtn).bind({
+    click: function(){
+      if ($(reviews).eq(0).is(':visible')){
+        $(reviews).eq(0).css({'display':'none',
+                                                'transition':'ease'});
+        $(reviews).eq(1).css({'display':'block',
+                             'transition':'ease'});
+      } else if ($(reviews).eq(1).is(':visible')){
+          $(reviews).eq(1).css({'display':'none',
+                               'transition':'ease'});
+          $(reviews).eq(2).css({'display':'block',
+                               'transition':'ease'});
+        } else if ($(reviews).eq(2).is(':visible')){
+            $(reviews).eq(2).css({'display':'none',
+                                 'transition':'ease'});
+            $(reviews).eq(0).css({'display':'block',
+                                 'transition':'ease'});
+          }
+    }
+  });
+  
+  $(prewBtn).bind({
+    click: function(){
+      if ($(reviews).eq(0).is(':visible')){
+        $(reviews).eq(0).css({'display':'none',
+                                                'transition':'ease'});
+        $(reviews).eq(2).css({'display':'block',
+                             'transition':'ease'});
+      } else if ($(reviews).eq(1).is(':visible')){
+          $(reviews).eq(1).css({'display':'none',
+                               'transition':'ease'});
+          $(reviews).eq(0).css({'display':'block',
+                               'transition':'ease'});
+        } else if ($(reviews).eq(2).is(':visible')){
+            $(reviews).eq(2).css({'display':'none',
+                                 'transition':'ease'});
+            $(reviews).eq(1).css({'display':'block',
+                                 'transition':'ease'});
+          }
+    }
+  });
+  
+  $(reviews).eq(1).bind({
+    click: function(){
+//      alert("review");
     }
   });
   
