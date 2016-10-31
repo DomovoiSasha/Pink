@@ -1,7 +1,7 @@
 open = 'Open Sans', sans-serif
 item-color = #283645
 pink-color = #d22856
-sprite = "file:///D:/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B/Pink/dist/images/sprite-3@1.svg"
+sprite = "../images/sprite-3@1.svg"
 
 body
 article
@@ -35,6 +35,12 @@ body
   background-color #fff
 
 
+button,
+button:hover,
+button:active,
+button:visited
+  outline none
+  
 @media screen and (min-width:0px) and (max-width:699px)
   body
     min-width 320px
@@ -49,7 +55,7 @@ body
     color #fff
 
     background-color item-color
-    background-image url("file:///D:/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B/Pink/dist/images/background-1@1x.jpg")
+    background-image url("../images/background-1@1x.jpg")
     background-repeat no-repeat
     background-position center
     background-size 100% 100%
@@ -67,7 +73,7 @@ body
     width 23.125vw
     height 6.875vw
     
-    background-image url("file:///D:/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B/Pink/dist/images/Pink-logo-1.png")
+    background-image url("../images/Pink-logo-1.png")
     background-repeat no-repeat
     background-position center
     background-size 100%
@@ -134,7 +140,7 @@ body
     margin 0
     margin-bottom 80vw
     
-    background-image url("file:///D:/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B/Pink/dist/images/iphone-hand-1.png")
+    background-image url("../images/iphone-hand-1.png")
     background-repeat no-repeat
     background-position left bottom
     background-size 80.625vw 89.0625vw
@@ -282,7 +288,7 @@ body
     position relative
     clear both
     width 100%
-    height 245.31vw
+    height 255.31vw
     margin-bottom 0
     padding 0 8.44%
     
@@ -322,8 +328,9 @@ body
       left 50%
       bottom 0
       margin-left -27.855%
+      margin-top 10vw
       
-      background-image url("file:///D:/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B/Pink/dist/images/iphone-screen-2-3@1x.png")
+      background-image url("../images/iphone-screen-2-3@1x.png")
       background-repeat no-repeat
       background-position center
       background-size contain
@@ -673,6 +680,14 @@ body
     
     color #d22856
     text-decoration none
+    
+    &:hover
+      color item-color
+      text-decoration underline
+
+    &:active
+      text-decoration none
+      opacity 0.5
 
   .contacts__address
     display inline-block
@@ -695,6 +710,14 @@ body
     line-height 7.5vw
     color #d22856
     text-decoration none
+    
+    &:hover
+      color item-color
+      text-decoration underline
+
+    &:active
+      text-decoration none
+      opacity 0.5
 
   .contacts__email
     display inline-block
@@ -715,6 +738,14 @@ body
     line-height 7.5vw
     color #d22856
     text-decoration none
+    
+    &:hover
+      color item-color
+      text-decoration underline
+
+    &:active
+      text-decoration none
+      opacity 0.5
 
   .contacts__map
     height 62.5vw
@@ -746,14 +777,14 @@ body
     
   @media (min-resolution: 144dpi ), (min-resolution: 1.5dppx )
     .main-header
-      background-image url("file:///D:/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B/Pink/dist/images/background-1@2x.jpg")
+      background-image url("../images/background-1@2x.jpg")
       background-size cover
     
     .header-body
-      background-image url("file:///D:/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B/Pink/dist/images/iphone-hand-1@2x.png")
+      background-image url("../images/iphone-hand-1@2x.png")
     
     .info-columns:before
-      background-image url("file:///D:/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B/Pink/dist/images/iphone-screen-2-3@2x.png")
+      background-image url("../images/iphone-screen-2-3@2x.png")
       background-repeat no-repeat
       background-position center
       background-size contain
@@ -776,7 +807,7 @@ body
     background-repeat no-repeat
     background-position center
     background-size 100%
-    background-image url("file:///D:/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B/Pink/dist/images/background-2@1x.jpg")    
+    background-image url("../images/background-2@1x.jpg")    
 
   .header-head
     clear both
@@ -792,7 +823,7 @@ body
     height 5.75vw
     margin-top -2.43vw
     
-    background-image url("file:///D:/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B/Pink/dist/images/logo-sprite-2@1.png")  
+    background-image url("../images/logo-sprite-2@1.png")  
     background-size 100% auto
     background-repeat no-repeat
     background-position top
@@ -863,7 +894,7 @@ body
     padding 0 5.71%
     margin 0
     
-    background-image url("file:///D:/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B/Pink/dist/images/iphone-hand-2@1x.png")
+    background-image url("../images/iphone-hand-2@1x.png")
     background-repeat no-repeat
     background-position bottom
     background-size 100% 77.857vw
@@ -1030,7 +1061,7 @@ body
       float left
       position relative
       
-      background-image url("file:///D:/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B/Pink/dist/images/iphone-screen-2-3@1x.png")
+      background-image url("../images/iphone-screen-2-3@1x.png")
       background-position center
       background-size 100%
       background-repeat no-repeat
@@ -1138,6 +1169,9 @@ body
     line-height 3.43vw
     font-size 2vw
     color pink-color
+    
+    &:hover
+      color item-color
 
   .review
     position relative
@@ -1394,6 +1428,14 @@ body
     line-height 3.43vw
     color #d22856
     text-decoration none
+    
+    &:hover
+      color item-color
+      text-decoration underline
+      
+    &:active
+      text-decoration none
+      opacity 0.5
 
   .contacts__address
     display block
@@ -1421,6 +1463,14 @@ body
     font-weight 300
     font-size 3.43vw
     line-height 4.14vw
+    
+    &:hover
+      color item-color
+      text-decoration underline
+
+    &:active
+      text-decoration none
+      opacity 0.5
 
   .contacts__email
     display block
@@ -1439,11 +1489,20 @@ body
 
   .contacts__email a
     display block
+    
     font-weight 300
     font-size 3.43vw
     line-height 3.43vw
     color #d22856
     text-decoration none
+    
+    &:hover
+      color item-color
+      text-decoration underline
+
+    &:active
+      text-decoration none
+      opacity 0.5
 
   .contacts__map
     width 100%
@@ -1485,7 +1544,7 @@ body
     margin 0
     margin-right 10.71vw
     
-    background-image url("file:///D:/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B/Pink/dist/images/logo-sprite-2@1.png")
+    background-image url("../images/logo-sprite-2@1.png")
     background-repeat no-repeat
     background-size 100% auto
     background-position bottom
@@ -1645,24 +1704,24 @@ body
 
   .copywright__customer
     display inline-block
-    height 33px
+    height 33.5px
     width 27px
     margin-left 1.43vw //10px
     margin-bottom -11px
     background-image url(sprite)
     background-repeat no-repeat
-    background-position 0 -390.5px
+    background-position 0 -388.5px
     background-size 85px 425px
     color transparent
     overflow hidden
     
   @media (min-resolution: 144dpi ), (min-resolution: 1.5dppx )
     .main-header
-      background-image url("file:///D:/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B/Pink/dist/images/background-2@2x.jpg")
+      background-image url("../images/background-2@2x.jpg")
       background-size cover
     
     .header-body
-      background-image url("file:///D:/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B/Pink/dist/images/iphone-hand-2@2x.png")
+      background-image url("../images/iphone-hand-2@2x.png")
       background-size 1050px 645px
       background-position right
       background-repeat no-repeat
@@ -1671,14 +1730,14 @@ body
       background-image none
       
     .info-columns:after
-      background-image url("file:///D:/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B/Pink/dist/images/iphone-screen-3-3@2x.png")
+      background-image url("../images/iphone-screen-3-3@2x.png")
       
     .logo
-      background-image url("file:///D:/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B/Pink/dist/images/logo-sprite-2@2.png")
+      background-image url("../images/logo-sprite-2@2.png")
       background-size 100%
       
     .logo--footer
-      background-image url("file:///D:/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B/Pink/dist/images/logo-sprite-2@2.png")
+      background-image url("../images/logo-sprite-2@2.png")
       background-size 100%   
     
       
@@ -1701,7 +1760,7 @@ body
     background-repeat no-repeat
     background-position center
     background-size 100%
-    background-image url("file:///D:/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B/Pink/dist/images/background-3@1x.jpg")    
+    background-image url("../images/background-3@1x.jpg")    
 
   .header-head 
     height 9.1666vw
@@ -1715,7 +1774,7 @@ body
     width 12.1666vw
     height 3.333vw
     
-    background-image url("file:///D:/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B/Pink/dist/images/logo-sprite-3@1.png")
+    background-image url("../images/logo-sprite-3@1.png")
     background-repeat no-repeat
     background-position top
     background-size 100% auto
@@ -1765,7 +1824,7 @@ body
     margin 0
     padding 0 10.83333%
     
-    background-image url("file:///D:/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B/Pink/dist/images/iphone-hand-3@1x.png")
+    background-image url("../images/iphone-hand-3@1x.png")
     background-position bottom
     background-size 87.5vw 53.75vw
     background-repeat no-repeat
@@ -1947,7 +2006,7 @@ body
     margin-bottom 4.91666vw
     position relative
     
-    background-image url("file:///D:/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B/Pink/dist/images/iphone-screen-3-1@1x.png")
+    background-image url("../images/iphone-screen-3-1@1x.png")
     background-position center
     background-size 24.333vw 25vw
     background-repeat no-repeat
@@ -1973,7 +2032,7 @@ body
     margin-bottom 4.91666vw
     position relative
     
-    background-image url("file:///D:/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B/Pink/dist/images/iphone-screen-3-2@1x.png")
+    background-image url("../images/iphone-screen-3-2@1x.png")
     background-position center
     background-size 24.333vw 25vw
     background-repeat no-repeat
@@ -1998,7 +2057,7 @@ body
     margin-bottom 4.91666vw
     position relative
     
-    background-image url("file:///D:/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B/Pink/dist/images/iphone-screen-3-3@1x.png")
+    background-image url("../images/iphone-screen-3-3@1x.png")
     background-position center
     background-size 24.333vw 25vw
     background-repeat no-repeat
@@ -2470,7 +2529,7 @@ body
     margin-right 19.58333vw
     float left
     
-    background-image url("file:///D:/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B/Pink/dist/images/logo-sprite-3@1.png")
+    background-image url("../images/logo-sprite-3@1.png")
     background-position bottom
     background-repeat no-repeat
     background-size 100% auto
@@ -2627,7 +2686,7 @@ body
 
   .copywright__customer
     display inline-block
-    height 33px
+    height 33.5px
     width 27px
     margin-left 10px
     margin-bottom -11px
@@ -2637,17 +2696,17 @@ body
     
     background-image url(sprite)
     background-repeat no-repeat
-    background-position 0 -390.5px
+    background-position 0 -388px
     background-size 85px 425px
     
     
   @media (min-resolution: 144dpi ), (min-resolution: 1.5dppx )
     .main-header
-      background-image url("file:///D:/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B/Pink/dist/images/background-3@2x.jpg")
+      background-image url("../images/background-3@2x.jpg")
       background-size cover
     
     .header-body
-      background-image url("file:///D:/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B/Pink/dist/images/iphone-hand-3@2x.png")
+      background-image url("../images/iphone-hand-3@2x.png")
       background-size 1050px 645px
       background-position right
       background-repeat no-repeat
@@ -2656,34 +2715,36 @@ body
       background-image none
       
     .info-img1
-      background-image url("file:///D:/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B/Pink/dist/images/iphone-screen-3-1@2x.png")
+      background-image url("../images/iphone-screen-3-1@2x.png")
       
     .info-img2
-      background-image url("file:///D:/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B/Pink/dist/images/iphone-screen-3-2@2x.png")
+      background-image url("../images/iphone-screen-3-2@2x.png")
       
     .info-img3
-      background-image url("file:///D:/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B/Pink/dist/images/iphone-screen-3-3@2x.png")
+      background-image url("../images/iphone-screen-3-3@2x.png")
       
     .logo
-      background-image url("file:///D:/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B/Pink/dist/images/logo-sprite-3@2.png")
+      background-image url("../images/logo-sprite-3@2.png")
       background-size 100%
       
     .logo--footer
-      background-image url("file:///D:/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B/Pink/dist/images/logo-sprite-3@2.png")
+      background-image url("../images/logo-sprite-3@2.png")
       background-size 100%
 
 
 
 
 @media screen and (min-width:1440px)
-  body 
+  
+  body
     width 100%
     max-width 2000px
+    margin 0 auto
     
     font-size 1.25vw
     line-height 1.25vw
 
-  .main-header    
+  .main-header
     width 100%
     height 59.30555vw
 
@@ -2692,8 +2753,8 @@ body
     background-color item-color
     background-repeat no-repeat
     background-position center
-    background-size 100%
-    background-image url("file:///D:/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B/Pink/dist/images/background-4@1x.jpg")    
+    background-size 100% 100%
+    background-image url("../images/background-4@1x.jpg")    
 
   .header-head 
     height 7.63888vw
@@ -2708,7 +2769,7 @@ body
     height 2.777vw
     margin-top -1.5277vw
     
-    background-image url("file:///D:/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B/Pink/dist/images/logo-sprite-3@1.png")
+    background-image url("../images/logo-sprite-3@1.png")
     background-repeat no-repeat
     background-position top
     background-size 100% auto
@@ -2757,7 +2818,7 @@ body
     margin 0
     padding 0 17.36111%
     
-    background-image url("file:///D:/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B/Pink/dist/images/iphone-hand-3@1x.png")
+    background-image url("../images/iphone-hand-3@1x.png")
     background-position 18.4vw bottom
     background-size 72.91666vw 44.791666vw
     background-repeat no-repeat
@@ -2887,7 +2948,10 @@ body
     height 39.236vw
     padding 0 19.444%
     margin 0
+    
     clear both
+    overflow hidden
+    box-sizing border-box
     
     background-color #f2f2f2
     font-size 1.25vw
@@ -2911,20 +2975,20 @@ body
     border-right 48.5vw solid transparent
     border-bottom 52px solid transparent
 
-  .info__column1 
+  .info__column1
     float left
-    width 16.666vw
-    margin-right 5.555vw
+    width 29.5%
+    margin-right 5.555%
     text-align center
 
   .info__column2
     float left
-    width 16.666vw
+    width 29.5%
     text-align center
 
   .info__column3
     float right
-    width 16.666vw
+    width 29.5%
     text-align center
 
   .column__headline 
@@ -2941,25 +3005,15 @@ body
     margin-bottom 4.1666vw
     position relative
     
-    background-image url("file:///D:/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B/Pink/dist/images/iphone-screen-3-1@1x.png")
+    background-image url("../images/iphone-screen-3-1@1x.png")
     background-position center
     background-size 20.2777vw 20.97222vw
     background-repeat no-repeat
     
     z-index 3
 
-  .info-img1::after 
-    content ''
-    display block
-    width 18.75vw
-    height 0.41vw
-    
-    position absolute
-    bottom -0.58333vw
-    left -1.41667vw
-    
-    border-radius 50%
-    box-shadow 0 -4px 5px 0px rgba(#ccc, 0.6)
+  .info-img1::after
+    display none
 
   .info-img2 
     display block
@@ -2967,24 +3021,14 @@ body
     margin-bottom 4.1666vw
     position relative
     
-    background-image url("file:///D:/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B/Pink/dist/images/iphone-screen-3-2@1x.png")
+    background-image url("../images/iphone-screen-3-2@1x.png")
     background-position center
     background-size 20.2777vw 20.97222vw
     background-repeat no-repeat
     z-index 3
 
-  .info-img2::after 
-    content ''
-    display block
-    width 22.5vw
-    height 0.5vw
-    
-    position absolute
-    bottom -0.58333vw
-    left -1.41667vw
-    
-    border-radius 50%
-    box-shadow 0 -4px 5px 0px rgba(#ccc, 0.6)
+  .info-img2::after
+    display none
 
   .info-img3 
     display block
@@ -2992,24 +3036,14 @@ body
     margin-bottom 4.1666vw
     position relative
     
-    background-image url("file:///D:/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B/Pink/dist/images/iphone-screen-3-3@1x.png")
+    background-image url("../images/iphone-screen-3-3@1x.png")
     background-position center
     background-size 20.2777vw 20.97222vw
     background-repeat no-repeat
     z-index 3
 
   .info-img3::after 
-    content ''
-    display block
-    width 18.75vw
-    height 0.41vw
-    
-    position absolute
-    bottom -0.58333vw
-    left -1.41667vw
-    
-    border-radius 50%
-    box-shadow 0 -4px 5px 0px rgba(#ccc, 0.6)
+    display none
 
   .effect
     width 100%
@@ -3021,6 +3055,7 @@ body
     clear both
 
   .effect__diagram
+    
     position relative
     float left
     width 20.8333vw
@@ -3055,8 +3090,8 @@ body
   .effect__description
     float right
     height 14.236vw
-    width 39.791666vw
-    margin-top 3.75vw
+    width 50%
+    margin-top 5vw
 
   .effect__headline 
     font-weight 700
@@ -3133,7 +3168,7 @@ body
     border none
     background-color transparent
     cursor pointer
-        
+    
     &:before
       content ''
       display block
@@ -3321,7 +3356,7 @@ body
   .contacts
     width 100%
     padding-top 4.58333vw
-    text-align center
+    text-align center    
 
   .contacts__headline
     width 40%
@@ -3366,6 +3401,7 @@ body
         opacity 0.5
 
   .contacts__address
+    position relative
     display inline-block
     width 18.75vw
     margin-right 6.25vw
@@ -3375,6 +3411,19 @@ body
     font-size 1.25vw
     line-height 1.25vw
     
+    &:after
+      content ''
+      position absolute
+      top 99%
+      left -43vw
+      
+      display block
+      width 100vw
+      height 0.3vw
+      background-color #fff
+      
+      z-index 5
+    
     span
       display block
       margin-bottom 1.666vw
@@ -3382,6 +3431,7 @@ body
       
     a
       display block
+      margin-bottom 0.3vw
       
       text-decoration none
       color #d22856
@@ -3430,7 +3480,9 @@ body
   .contacts__map
     height 36.180555vw
     position relative
+    
     background-color rgba(0,0,0,0.5)
+    overflow hidden
 
     iframe
       width 100%
@@ -3441,16 +3493,17 @@ body
       display block
       width 0
       height 0
-      margin 0 auto
+      margin-left -49vw
       
       position absolute
       top 0
+      left 50%
       
       border-top 8.55vw solid #fff
       border-left 49vw solid transparent
       border-right 49vw solid transparent
       
-      box-shadow 0 -2px 0 0 #fff
+      z-index 3
 
   .main-footer
     height 10.902777vw
@@ -3464,7 +3517,7 @@ body
     margin-right 16.319444vw
     float left
     
-    background-image url("file:///D:/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B/Pink/dist/images/logo-sprite-3@1.png")
+    background-image url("../images/logo-sprite-3@1.png")
     background-position bottom
     background-repeat no-repeat
     background-size 100% auto
@@ -3621,23 +3674,23 @@ body
     color transparent
     overflow hidden
     background-repeat no-repeat
-    height 33px
+    height 34px
     width 27px
     margin-left 10px
     margin-bottom -11px
     background-image url(sprite)
-    background-position 0 -390.5px
+    background-position 0 -387.5px
     background-size 85px 425px
     
     
     
   @media (min-resolution: 144dpi ), (min-resolution: 1.5dppx )
     .main-header
-      background-image url("file:///D:/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B/Pink/dist/images/background-4@2x.jpg")
+      background-image url("../images/background-4@2x.jpg")
       background-size cover
     
     .header-body
-      background-image url("file:///D:/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B/Pink/dist/images/iphone-hand-3@2x.png")
+      background-image url("../images/iphone-hand-3@2x.png")
       background-size 1050px 645px
       background-position right
       background-repeat no-repeat
@@ -3646,19 +3699,19 @@ body
       background-image none
       
     .info-img1
-      background-image url("file:///D:/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B/Pink/dist/images/iphone-screen-3-1@2x.png")
+      background-image url("../images/iphone-screen-3-1@2x.png")
       
     .info-img2
-      background-image url("file:///D:/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B/Pink/dist/images/iphone-screen-3-2@2x.png")
+      background-image url("../images/iphone-screen-3-2@2x.png")
       
     .info-img3
-      background-image url("file:///D:/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B/Pink/dist/images/iphone-screen-3-3@2x.png")
+      background-image url("../images/iphone-screen-3-3@2x.png")
       
     .logo
-      background-image url("file:///D:/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B/Pink/dist/images/logo-sprite-3@2.png")
+      background-image url("../images/logo-sprite-3@2.png")
       background-size 100%
       
     .logo--footer
-      background-image url("file:///D:/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B/Pink/dist/images/logo-sprite-3@2.png")
+      background-image url("../images/logo-sprite-3@2.png")
       background-size 100%
       
