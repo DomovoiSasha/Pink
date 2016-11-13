@@ -1,0 +1,54 @@
+import('sprites/*')
+import('helpers/svg-size')
+@import 'helpers/variables'
+@import 'helpers/mixins'
+@import 'helpers/fonts'
+@import 'helpers/optimize'
+
+import('../blocks/**/*')
+	
+body
+	width 100%
+	
+	font-family open
+	color itemColor
+	
+	background-color #fff
+
+button,
+button:hover,
+button:active,
+button:visited
+	outline none
+
++below(700px)
+	body
+		min-width 320px
+		
+		font-size 4.375vw
+		line-height 4.375vw
+
++between(700px, 1199px)
+	body 
+		width 100%
+		min-width 700px
+
+		font-size 2vw
+		line-height 2vw
+
++between(1200px, 1439px)
+	body 
+		width 100%
+		min-width 1200px
+
+		font-size 1.5vw
+		line-height 1.5vw
+
++above(1440px)
+	body
+		width 100%
+		max-width 2000px
+		margin 0 auto
+
+		font-size 22px
+		line-height 22px

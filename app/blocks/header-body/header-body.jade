@@ -1,0 +1,16 @@
+mixin header-body()
+	+b('article').header-body&attributes(attributes)
+		div.header-body__content
+			p.header-body__tagline Взгляните на жизнь иначе!
+			button.header-body__btn.btn-download(value="Скачать приложение") Скачать приложение
+			div.header-body__os-btn.os-btn
+				a(href="#").os-btn__btn-apple
+					svg.os-btn__btn-apple-svg
+						use(x='0' y='0' xlink:href='assets/images/icon.svg#icon_apple')
+				a(href="#").os-btn__btn-android
+					svg.os-btn__btn-android-svg
+						use(x='0' y='0' xlink:href='assets/images/icon.svg#icon_android')
+				a(href="#").os-btn__btn-windows
+					svg.os-btn__btn-windows-svg
+						use(x='0' y='0' xlink:href='assets/images/icon.svg#icon_microsoft')
+			smal.header-body__note Доступно для iPhone, iPad, Android, Windows phone, Mac OS, Windows 8

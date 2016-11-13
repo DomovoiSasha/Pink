@@ -1,0 +1,15 @@
+mixin main-header()
+	+b.header-head&attributes(attributes)
+		div.main-header__logo.logo
+		div.main-menu__btn-burger
+			svg.main-menu__btn-burger-svg
+				use(x='0' y='0' xlink:href='assets/images/icon.svg#icon_burger')
+		div.main-menu__btn-cross
+			svg.main-menu__btn-cross-svg
+				use(x='0' y='0' xlink:href='assets/images/icon.svg#icon_cross')
+		nav.main-menu
+			ul
+				li.main-menu__item Информация
+				li.main-menu__item Возможности
+				li.main-menu__item Отзывы
+				li.main-menu__item Стоимость

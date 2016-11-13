@@ -1,0 +1,22 @@
+mixin main-footer()
+	+b('footer').main-footer&attributes(attributes)
+		div.main-footer__logo.logo
+		div.main-footer__social-btn.social-btn
+			a(href="#").social-btn__twitter Twitter
+				svg.social-btn__twitter-svg
+					use(x='0' y='0' xlink:href='assets/images/icon.svg#icon_twitter')
+			a(href="#").social-btn__facebook Facebook
+				svg.social-btn__facebook-svg
+					use(x='0' y='0' xlink:href='assets/images/icon.svg#icon_facebook')
+			a(href="#").social-btn__youtube YouTube
+				svg.social-btn__youtube-svg
+					use(x='0' y='0' xlink:href='assets/images/icon.svg#icon_youtube')
+		div.main-footer__copywright.copywright
+			span.copywright__text Website by 
+				a(href="#" class="copywright__creator")
+					svg.copywright__creator-svg
+						use(x='0' y='0' xlink:href='assets/images/icon.svg#icon_glukhanko')
+				|for
+				a(href="#" class="copywright__customer")
+					svg.copywright__customer-svg
+						use(x='0' y='0' xlink:href='assets/images/icon.svg#icon_htmlacademy')

@@ -1,0 +1,26 @@
+mixin review()
+	+b('article').review&attributes(attributes)
+		svg.review__quotes-svg
+			use(x='0' y='0' xlink:href='assets/images/icon.svg#icon_quotes')
+		button.review__btn-prew
+		ul.reviews-list
+			li.review__item.review__item-hide
+				p.review__recall Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit voluptatem qui dolorum quis reiciendis quidem facilis esse accusamus molestias distinctio nam aliquam nemo error eos debitis fuga, ducimus necessitatibus omnis.
+				span.review__author Михаил Иванов
+				span.review__author-info 28 лет, слесарь
+			li.review__item
+				p.review__recall Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомилась со своей будущей женой в комментариях к выложенной фотографии!
+				span.review__author Николай Петров
+				span.review__author-info 25 лет, водитель трамвая
+			li.review__item.review__item-hide
+				p.review__recall  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur eos eum aspernatur ipsum esse placeat delectus provident, deleniti voluptas consequatur, amet assumenda blanditiis, ullam! Ea nobis quisquam animi magni sequi.
+				span.review__author Анна Орлова
+				span.review__author-info 23 года, дизайнер
+		button.review__btn-next
+		div.review__toggle.toggle
+			input(type="radio" name="review__toggle" value="review1" id="review1").toggle__input
+			label(for="review1" id="rewiew1-label").toggle__label
+			input(type="radio" name="review__toggle" value="review2" checked id="review2").toggle__input
+			label(for="review2" id="rewiew2-label").toggle__label
+			input(type="radio" name="review__toggle" value="review3" id="review3").toggle__input
+			label(for="review3" id="rewiew3-label").toggle__label

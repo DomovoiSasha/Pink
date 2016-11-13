@@ -1,0 +1,10 @@
+mixin effect()
+	+b.effect&attributes(attributes)
+		div.effect__diagram
+			svg.effect__timer-svg
+				use(x='0' y='0' xlink:href='assets/images/icon.svg#icon_timer')
+			p.effect__time 24
+		div.effect__description
+			h4.effect__headline Эффект на 24 часа!
+			p.effect__paragraph Британские ученые провели исследование и доказали, что положительный эффект от использования приложения длится целые сутки!
+			a(href="#").effect__link Узнать больше об исследовании

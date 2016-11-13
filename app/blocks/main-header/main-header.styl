@@ -1,0 +1,346 @@
++below(699px)
+	.main-header
+		width 100%
+		min-height 66px
+		
+		color #fff
+
+		background-color itemColor
+		background-image url("../images/background-1@1x.jpg")
+		background-repeat no-repeat
+		background-position center
+		background-size 100% 100%
+		
+		+retina()
+			background-image url("../images/background-1@2x.jpg")
+		
+	.header-head
+		size(100%, 20.625vw)
+		padding 6.875vw 7.19%
+		
+		background-color rgba(0,0,0,0.4)
+		clear both
+
+	.main-header__logo
+		float left
+		size(23.125vw, 6.875vw)
+		
+		background-image url("../images/Pink-logo-1.png")
+		background-repeat no-repeat
+		background-position center
+		background-size 100%
+		
+		
+		&:hover
+			opacity 0.5
+		
+		&:active
+			opacity 0.6
+			
+	.main-menu
+		width 100%
+		margin 0
+		
+		position absolute
+		top 20.625vw
+		left 0
+		z-index 5
+		
+		&__btn-burger
+			display block
+			size(15.625vw, 6.875vw)
+			float right
+				
+			&-svg
+				size(100%)
+				fill #fff
+				transition ease 0.5s
+				
+				&:hover,
+				&:active
+					fill pinkColor
+		
+		&__btn-cross
+			display none
+			size(6.875vw)
+			float right
+				
+			&-svg
+				size(100%)
+				fill #fff
+				transition ease 0.5s
+				
+				&:hover,
+				&:active
+					fill pinkColor
+		
+		&__item
+			display none
+			width 100%
+			padding 5vw 0
+			margin 0
+			
+			font-size 5.625vw
+			line-height 10vw
+			font-weight 700
+			text-align center
+			text-transform uppercase
+			
+			background-color #283645
+			cursor pointer
+			
+			border-bottom 0.31vw solid #000
+			border-top 0.31vw solid rgba(#fff, 30%)
+			
+			&:hover
+				color pinkColor
+			
+			&:active
+				color rgba(pinkColor, 30%)
+		
++between(700px, 1199px)
+	.main-header
+		size(100%, 104.14vw)
+		
+		color #fff
+
+		background-color itemColor
+		background-repeat no-repeat
+		background-position center
+		background-size 100%
+		background-image url("../images/background-2@1x.jpg")
+		
+		+retina()
+			background-image url("../images/background-2@2x.jpg")
+	
+	.header-head
+		clear both
+		size(100%, 15.71vw)
+		padding 6.14vw 5.71%
+		
+		background-color rgba(0,0,0,0.4)
+
+	.main-header__logo
+		float left
+		size(20.86vw, 5.75vw)
+		margin-top -2.43vw
+
+		background-image url("../images/sprites/logo-sprite-2@1.png")
+		background-size 100% auto
+		background-repeat no-repeat
+		background-position top
+		
+		+retina()
+			background-image url("../images/sprites/logo-sprite-2@2.png")
+
+		&:hover
+			background-position bottom
+
+		&:active
+			background-position top
+			opacity 0.5
+
+	.main-menu
+		width 100%
+		margin 0
+		
+		position absolute
+		top 15.71vw
+		left 0
+		
+		z-index 5  
+		
+		&__btn-burger
+			display block
+			size(7.14vw, 3.29vw)
+			float right
+			
+			&-svg
+				size(100%)
+				fill #fff
+				transition ease 0.5s
+				
+				&:hover,
+				&:active
+					fill pinkColor
+			
+		&__btn-cross
+			display none
+			size(1.92vw)
+			float right
+			
+			&-svg
+				size(100%)
+				fill #fff
+				transition ease 0.5s
+				
+				&:hover,
+				&:active
+					fill pinkColor
+			
+		&__item
+			display none
+			width 100%
+			padding 2.14vw 0
+			margin 0
+			
+			font-size 2.57vw 
+			line-height 4.57vw
+			font-weight 700
+			text-align center
+			text-transform uppercase
+
+			background-color #283645
+			cursor pointer
+
+			border-bottom 1px solid #000
+			border-top 1px solid rgba(#fff, 30%)
+
+			&:hover
+				color pinkColor
+
+			&:active
+				color rgba(pinkColor, 30%)
+			
++between(1200px, 1439px)
+	.main-header
+		size(100%, 71.1666vw)
+		
+		color #fff
+
+		background-color itemColor
+		background-repeat no-repeat
+		background-position center
+		background-size 100%
+		background-image url("../images/background-3@1x.jpg")
+		
+		+retina()
+			background-image url("../images/background-3@2x.jpg")
+	
+	.header-head
+		height 9.1666vw
+		padding 2.25vw 10.83333% 3.58vw
+		
+		background-color rgba(0,0,0,0.4)
+		clear both
+
+	.main-header__logo
+		float left
+		size(12.1666vw, 3.333vw)
+		
+		background-image url("../images/sprites/logo-sprite-3@1.png")
+		background-repeat no-repeat
+		background-position top
+		background-size 100% auto
+		
+		+retina()
+			background-image url("../images/sprites/logo-sprite-3@2.png")
+		
+		&:hover
+			background-position bottom
+		
+		&:active
+			background-position top
+			opacity 0.5
+		
+	.main-menu
+		float right
+		min-width 60%
+		
+		&__btn-burger
+			display none
+	
+		&__btn-cross
+			display none
+		
+		&__item
+			display inline-block
+			margin-left 5.5vw
+			margin-top 1.75vw
+
+			font-size 1.5vw
+			line-height 1.5vw
+
+			&:hover
+				border-bottom 0.8333vw solid transparent
+				box-shadow 0 0.1666vw 0 0 #fff
+				cursor pointer
+
+			&:active
+				border-bottom none
+				box-shadow none
+				opacity 0.3
+
+			&:first-child
+				margin-left 0
+	
++above(1440px)
+	.main-header
+		size(100%, 1025px)
+		
+		color #fff
+
+		background-color itemColor
+		background-repeat no-repeat
+		background-position center
+		background-size 100% 100%
+		background-image url("../images/background-4@1x.jpg")
+		
+		+retina()
+			background-image url("../images/background-4@2x.jpg")
+	
+	.header-head
+		height 132px
+		padding 32px 10.83333% 52px
+		
+		background-color rgba(0,0,0,0.4)
+		clear both
+	
+	.main-header__logo
+		float left
+		size(175px, 48px)
+		
+		background-image url("../images/sprites/logo-sprite-3@1.png")
+		background-repeat no-repeat
+		background-position top
+		background-size 100% auto
+		
+		+retina()
+			background-image url("../images/sprites/logo-sprite-3@2.png")
+		
+		&:hover
+			background-position bottom
+		
+		&:active
+			background-position top
+			opacity 0.5
+			
+	.main-menu
+		float right
+
+		&__btn-burger
+			display none
+	
+		&__btn-cross
+			display none
+		
+		&__item
+			display inline-block
+			margin-left 79px
+			margin-top 25px
+			
+			font-size 22px
+			line-height 22px
+			
+			&:hover
+				border-bottom 12px solid transparent
+				box-shadow 0 2px 0 0 #fff
+				cursor pointer
+			
+			&:active
+				border-bottom none
+				box-shadow none
+				opacity 0.3
+				
+			&:first-child
+				margin-left 0

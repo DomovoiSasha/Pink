@@ -1,0 +1,362 @@
++below(699px)
+	.review
+		clear both
+		width 100%
+		padding 14.06vw 6.25% 13.13vw
+
+		position relative    
+		text-align center
+		
+		&__recall
+			width 100%
+			margin 0 auto
+			margin-bottom 13.125vw
+			padding-top 13.75vw
+
+			line-height 9.375vw
+			font-size 4.375vw
+
+		&__author
+			display block
+			width 100%
+
+			position absolute
+			top 13.75vw
+			left 0
+
+			text-align center
+			color #000
+			font-weight 700
+			font-size 5.625vw
+			line-height 9.375vw
+
+		&__author-info
+			display none
+
+		&__btn-prew
+			display none
+
+		&__btn-next
+			display none
+			
+		&__quotes-svg
+			display none
+
+		&__item-hide
+			display none
+
+		&__toggle
+			display block
+			height 3.75vw    
+
+	.toggle__input
+		display none
+
+	.toggle__label
+		position relative
+		display inline-block
+		size(2.8vw)
+
+		border-radius 50%
+		background-color lightgray
+		border 0.94vw solid #fff
+
+	input[type=radio]#review1:checked~label[for="review1"]
+		size(2.8vw)
+
+		background-color lightgray
+		border 0.94vw solid itemColor
+		
+	input[type=radio]#review2:checked~label[for="review2"]
+		size(2.8vw)
+
+		background-color lightgray
+		border 0.94vw solid itemColor
+		
+	input[type=radio]#review3:checked~label[for="review3"]
+		size(2.8vw)
+
+		background-color lightgray
+		border 0.94vw solid itemColor
++between(700px, 1199px)
+	.review
+		position relative
+		width 100%    
+		padding 10.86vw  5.71% 2.86vw
+		
+		&__quotes-svg
+			display none
+
+		&__item-hide
+			display none
+
+		&__recall 
+			width 100%
+			margin 0 auto
+			margin-bottom 5vw
+
+			line-height 4.29vw
+			font-size 2.57vw
+			text-align center
+
+		&__author
+			display block
+			width 100%
+
+			font-weight 700
+			font-size 2.87vw
+			line-height 4.28vw
+			text-align center
+			color #000
+
+		&__author-info
+			display block
+			margin-bottom 5vw
+
+			text-align center
+			font-size 2vw
+			line-height 4.28vw
+
+		&__btn-prew
+			display none
+
+		&__btn-next 
+			display none
+
+		&__toggle
+			display block
+			height 3.75vw
+			text-align center
+
+	.toggle__input
+		display none
+
+	.toggle__label
+		position relative
+		display inline-block
+		size(2.7vw)
+
+		border-radius 50%
+		background-color lightgray
+		border 0.94vw solid #fff
+		
+	input[type=radio]#review1:checked~label[for="review1"]
+		size(2.7vw)
+
+		background-color transparent
+		border 0.94vw solid itemColor
+		
+	input[type=radio]#review2:checked~label[for="review2"]
+		size(2.7vw)
+
+		background-color transparent
+		border 0.94vw solid itemColor
+
+	input[type=radio]#review3:checked~label[for="review3"]
+		size(2.7vw)
+
+		background-color transparent
+		border 0.94vw solid itemColor
+
++between(1200px, 1439px)
+	.review
+		clear both
+		width 100%
+		margin-bottom 2.8333vw
+		padding 0px 10.8333%
+
+		position relative
+		text-align center
+
+		&__quotes-svg
+			display block
+			size(7.0833vw, 5.3333vw)
+			margin 0 auto
+			margin-bottom 4.333vw
+			fill #dedede
+
+		&__recall
+			width 56.666vw
+			height 7.41666vw
+			margin 0 auto
+			margin-bottom 3.08333vw
+
+			line-height 2.5vw
+			font-size 1.5vw
+			text-align center
+
+		&__author
+			display block
+
+			color #000
+			font-weight 700
+			font-size 2vw
+			line-height 2.5vw
+			text-align center
+			
+		&__author-info
+			display block
+			margin-bottom 0.5vw
+			
+			text-align center
+			font-size 1.2vw
+			line-height 2.5vw
+
+		&__item-hide 
+			display none
+
+		&__btn-prew
+			display inline-block
+			top 11.666vw
+			left 10.833%
+
+			position absolute
+			width 1.8333vw
+			height 3.5vw
+
+			border none
+			background-color transparent
+			cursor pointer
+
+			&:before
+				content ''
+				display block
+				width 2.1666vw
+				height 2.1666vw
+
+				position absolute
+				top 0.666vw
+				left 0.41666vw
+
+				border 0.1666vw solid #c2c6ca
+				border-bottom none
+				border-right none
+				transform rotate(-45deg)
+
+		&__btn-next
+			display inline-block
+			top 11.666vw
+			right 10.833%
+
+			position absolute
+			width 1.8333vw
+			height 3.5vw
+
+			border none
+			background-color transparent
+			cursor pointer
+
+			&:before
+				content ''
+				display block
+				width 2.1666vw
+				height 2.1666vw
+
+				position absolute
+				top 0.666vw
+				left 0.41666vw
+
+				border 0.1666vw solid #c2c6ca
+				border-bottom none
+				border-right none
+				transform rotate(135deg)
+
+	.review__toggle
+		display none
++above(1440px)
+	.review
+		clear both
+		width 100%
+		margin-bottom 41px
+		padding 0px 17.36111%
+
+		position relative
+		text-align center
+
+		&__quotes-svg
+			display block
+			size(102px, 76.8px)
+			margin 0 auto
+			margin-bottom 52px
+			fill #dedede
+			
+		&__recall
+			width 815px
+			height 107px
+			margin 0 auto
+			margin-bottom 44px
+
+			line-height 36px
+			font-size 22px
+
+		&__author
+			display block
+			margin-bottom 7px
+
+			color #000
+			font-weight 700
+			font-size 29px
+			line-height 36px
+
+		&__item-hide
+			display none
+
+		&__btn-prew
+			display inline-block
+			top 168px
+			left 17.36111%
+
+			position absolute
+			width 26px
+			height 50px
+
+			border none
+			background-color transparent
+			cursor pointer
+
+			&:before
+				content ''
+				display block
+				width 31px
+				height 31px
+
+				position absolute
+				top 10px
+				left 6px
+
+				border 2px solid #c2c6ca
+				border-bottom none
+				border-right none
+				transform rotate(-45deg)
+
+		&__btn-next
+			display inline-block
+			top 168px
+			right 17.36111%
+
+			position absolute
+			width 26px
+			height 50px
+
+			border none
+			background-color transparent
+			cursor pointer
+
+			&:before
+				content ''
+				display block
+				width 31px
+				height 31px
+
+				position absolute
+				top 10px
+				left 6px
+
+				border 2px solid #c2c6ca
+				border-bottom none
+				border-right none
+				transform rotate(135deg)
+
+	.review__toggle
+		display none
+

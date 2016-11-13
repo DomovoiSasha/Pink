@@ -1,0 +1,534 @@
++below(699px)
+	.price
+		size(100%, 139.38vw)
+		padding 28.44vw 0 14.69vw
+
+		background-color grayColor
+		position relative
+		overflow hidden
+		
+		&:after
+			content ''
+			display block
+			size(0)
+
+			position absolute
+			top 0
+			left 0
+
+			border 33px solid #fff
+			border-left 48.5vw solid #fff
+			border-right 48.5vw solid transparent
+			border-bottom 33px solid transparent
+			
+		&__toggle
+			display block
+			width 100%
+			
+			position absolute
+			bottom 14.69vw
+			
+	.toggle
+		text-align center
+		
+		&__input
+			display none
+		
+	.toggle__label
+		display inline-block
+		size(2.8vw)
+
+		border-radius 50%
+		background-color lightgray
+		border 0.94vw solid grayColor
+	input[type=radio]#row1:checked~label[for="row1"]
+		size(2.8vw)
+
+		background-color lightgray
+		border 0.94vw solid itemColor
+	input[type=radio]#row2:checked~label[for="row2"]
+		size(2.8vw)
+
+		background-color lightgray
+		border 0.94vw solid itemColor
+
+	input[type=radio]#row3:checked~label[for="row3"]
+		size(2.8vw)
+
+		background-color lightgray
+		border 0.94vw solid itemColor
+			
+	.price-table
+		size(350vw, 87.81vw)
+		margin-bottom 12.5vw
+		
+		position absolute
+		left -170vw
+
+		text-align left
+		vertical-align middle
+		background-color #fff
+
+		border-collapse collapse
+		
+		&__header-row
+		color #fff
+		
+		&__headline
+			width 87.5vw
+			
+			text-align center
+			text-transform uppercase
+			font-weight 700
+			font-size 5.625vw
+			line-height 9.375vw
+			color #fff
+
+			background-color #283645
+			border 0.625vw solid #e5e5e5
+			
+		&__invisible-cell
+			background-color transparent
+			border none
+			box-shadow 0 -5px 0 0 #f2f2f2
+			
+		&__cost
+			display block
+			font-weight 300
+			font-size 7.5vw
+			line-height 9.375vw
+			
+		&__hit
+			position relative
+			overflow hidden
+			
+			&:before
+				content 'хит'
+				position absolute
+				left -9vw
+				top 2vw
+
+				display block
+				width 32.19vw
+				height 9.69vw
+
+				font-size 4.375vw
+				line-height 9.375vw
+				font-weight 700
+
+				background-color #d22856
+				transform rotate(-45deg)
+				
+		&__service
+			width 87.5vw
+			text-align left
+			border 2px solid #e5e5e5
+			
+		&__label
+			font-weight 300
+			font-size 4.375vw
+			line-height 9.375vw
+			padding 4.69vw 6.25vw 4.69vw 7.8vw
+			text-transform uppercase
+			
+		&__cell-check
+			width 87.5vw
+			position relative
+			border 2px solid #e5e5e5
+			text-align left
+			
+		&__check-svg
+			display block
+			size(9.06vw, 6.875vw)
+			margin-top -3.4375vw
+
+			position absolute
+			top 50%
+			right 6.25vw
+			
+			fill #52AC62
+			
+		&__cell-cross
+			width 87.5vw
+			position relative
+			border 2px solid #e5e5e5
+			text-align left
+			
+		&__cross-svg
+			display block
+			size(8.125vw)
+			margin-top -4.0625vw
+
+			position absolute
+			top 50%
+			right 6.25vw
+			
+			fill #D76644
+	
++between(700px, 1199px)
+	.price
+		size(100%, 53.86vw)
+		padding 12.71vw 5.71% 9.71vw
+
+		background-color grayColor
+		position relative
+		
+		&:after
+			content ''
+			display block
+			size(0)
+
+			position absolute
+			top 0
+			left 0
+
+			border 3.5px solid #fff
+			border-left 48.5vw solid #fff
+			border-right 48.5vw solid transparent
+			border-bottom 3.5px solid transparent
+			
+		&__toggle
+			display none
+			
+	.price-table
+		size(100%, 31.43vw)
+
+		text-align left
+		vertical-align middle
+		background-color #fff
+
+		border-collapse collapse
+		
+		&__headline
+			width 22.14vw
+			
+			text-align center
+			text-transform uppercase
+			font-weight 700
+			font-size 2.29vw
+			line-height 4.29vw
+			color #fff
+
+			background-color #283645
+			border 0.1666vw solid #e5e5e5
+			
+		&__invisible-cell
+			background-color grayColor
+			border none
+			box-shadow 0 -5px 0 0 #f2f2f2
+			
+		&__cost
+			display block
+			font-weight 300
+			font-size 2.57vw
+			line-height 4.29vw
+			
+		&__hit
+			position relative
+			overflow hidden
+			
+			&:before
+				content 'хит'
+				position absolute
+				left -3.9vw
+				top 0vw
+
+				display block
+				width 12.14vw
+				height 4.29vw
+
+				font-size 2vw
+				font-weight 300
+
+				background-color #d22856
+				transform rotate(-45deg)
+				
+		&__service
+			padding-left 2.14vw
+			font-size 2vw
+			line-height 4.286vw
+			border 2px solid #e5e5e5
+			
+		&__label
+			display none
+			
+		&__cell-check
+			width 22.14vw
+			text-align center
+			position relative
+			border 2px solid #e5e5e5
+			
+		&__check-svg
+			display block
+			size(4.14vw, 3.14vw)
+
+			position absolute
+			top 50%
+			right 50%
+			margin-top -1.57vw
+			margin-right -2.07vw
+
+			fill #52AC62
+			
+		&__cell-cross
+			width 22.14vw
+			text-align center
+			position relative
+			border 2px solid #e5e5e5
+			
+		&__cross-svg
+			display block
+			size(3.7vw)
+
+			position absolute
+			top 50%
+			right 50%
+			margin-top -1.85vw
+			margin-right -1.85vw
+
+			fill #D76644
+	
++between(1200px, 1439px)
+	.price
+		size(100%, 44.1666vw)
+		padding 12.75vw 10.833% 7.91666vw
+
+		background-color grayColor
+		position relative
+		
+		&:after
+			content ''
+			display block
+			size(0)
+
+			position absolute
+			top 0
+			left 0
+
+			border 47.5px solid #fff
+			border-left 48.5vw solid #fff
+			border-right 48.5vw solid transparent
+			border-bottom  47.5px solid transparent
+			
+		&__toggle
+			display none
+			
+	.price-table
+		size(100%, 23.41666vw)
+
+		text-align left
+		vertical-align middle
+		background-color #fff
+
+		border-collapse collapse
+		
+		&__headline
+			text-align center
+			text-transform uppercase
+			font-weight 700
+			font-size 1.5vw
+			line-height 2.5vw
+			color #fff
+
+			background-color #283645
+			border 0.1666vw solid #e5e5e5
+			
+		&__invisible-cell
+			background-color #f2f2f2
+			border none
+			box-shadow 0 -5px 0 0 #f2f2f2
+			
+		&__cost
+			display block
+			font-weight 300
+			font-size 2vw
+			line-height 2.5vw
+			
+		&__hit
+			position relative
+			overflow hidden
+			
+			&:before
+				content 'хит'
+				position absolute
+				left -2.25vw
+				top 0.6vw
+
+				display block
+				width 8.58333vw
+				height 2.5vw
+
+				font-size 1.166vw
+				line-height 2.5vw
+				font-weight 300
+
+				background-color #d22856
+				transform rotate(-45deg)
+				
+		&__service
+			width 19.58333vw
+			padding-left 2vw
+
+			font-size 1.666vw
+			line-height 2.5vw
+			border 2px solid lightgray
+			
+		&__label
+			display none
+			
+		&__cell-check
+			text-align center
+			position relative
+			border 2px solid lightgray
+			
+		&__check-svg
+			display block
+			size(2.42vw, 1.83vw)
+
+			position absolute
+			top 50%
+			right 50%
+			margin-top -0.915vw
+			margin-right -1.21vw
+
+			fill #52AC62
+			
+		&__cell-cross
+			text-align center
+			position relative
+			border 2px solid #e5e5e5
+			
+		&__cross-svg
+			display block
+			size(2.1666vw)
+
+			position absolute
+			top 50%
+			right 50%
+			margin-top -1.0833vw
+			margin-right -1.0833vw
+
+			fill #D76644
+			
++above(1440px)
+	.price
+		size(100%, 636px)
+		padding 184px17.36111% 114px
+
+		background-color grayColor
+		position relative
+		overflow hidden
+		
+		&:after
+			content ''
+			display block
+			size(0)
+
+			position absolute
+			top 0
+			left 0
+
+			border 52px solid #fff
+			border-left 48.5vw solid #fff
+			border-right 48.5vw solid transparent
+			border-bottom 52px solid transparent
+			
+		&__toggle
+			display none
+			
+	.price-table
+		size(100%, 337px)
+
+		text-align left
+		vertical-align middle
+		background-color #fff
+
+		border-collapse collapse
+		
+		&__headline
+			text-align center
+			text-transform uppercase
+			font-weight 700
+			font-size 22px
+			line-height 36px
+			color #fff
+
+			background-color #283645
+			border 2px solid #e5e5e5
+			
+		&__invisible-cell
+			background-color #f2f2f2
+			border none
+			box-shadow 0 -5px 0 0 #f2f2f2
+			
+		&__cost
+			display block
+			font-weight 300
+			font-size 29px
+			line-height 36px
+			
+		&__hit
+			position relative
+			overflow hidden
+			
+			&:before
+				content 'хит'
+				position absolute
+				left -32px
+				top 9px
+
+				display block
+				size(124px, 36px)
+
+				font-size 17px
+				line-height 36px
+				font-weight 300
+
+				background-color #d22856
+				transform rotate(-45deg)
+				
+		&__service
+			width 282px
+			padding-left 29px
+
+			font-size 24px
+			line-height 36px
+			
+			border 2px solid #e5e5e5
+			
+		&__label
+			display none
+			
+		&__cell-check
+			border 2px solid #e5e5e5
+			text-align center
+			position relative
+			
+		&__check-svg
+			display block
+			size(34.85px, 26.35px)
+
+			position absolute
+			top 50%
+			right 50%
+			margin-top -13.175px
+			margin-right -17.425px
+
+			fill #52AC62
+			
+		&__cell-cross
+			border 2px solid #e5e5e5
+			text-align center
+			position relative
+			
+		&__cross-svg
+			display block
+			size(31.2px)
+
+			position absolute
+			top 50%
+			right 50%
+			margin-top -15.6px
+			margin-right -15.6px
+
+			fill #D76644

@@ -1,0 +1,61 @@
+mixin price()
+	+b('article').price&attributes(attributes)
+		table.price-table
+			tr.price-table__header-row
+				th.price-table__invisible-cell
+				th.price-table__headline База
+					span.price-table__cost 1,99 USD
+				th.price-table__hit.price-table__headline Стандарт
+					span.price-table__cost 3,99 USD
+				th.price-table__headline Анлим
+					span.price-table__cost 9,99 USD
+			tr.price-table__row
+				td.price-table__service Розовый фильтр
+				td.price-table__cell-check
+					svg.price-table__check-svg
+						use(x='0' y='0' xlink:href='assets/images/icon.svg#icon_yes')
+					span.price-table__label Розовый фильтр
+				td.price-table__cell-check
+					svg.price-table__check-svg
+						use(x='0' y='0' xlink:href='assets/images/icon.svg#icon_yes')
+					span.price-table__label Розовый фильтр
+				td.price-table__cell-check
+					svg.price-table__check-svg
+						use(x='0' y='0' xlink:href='assets/images/icon.svg#icon_yes')
+					span.price-table__label Розовый фильтр
+			tr.price-table__row
+				td.price-table__service Смайлики
+				td.price-table__cell-cross
+					svg.price-table__cross-svg
+						use(x='0' y='0' xlink:href='assets/images/icon.svg#icon_cross')
+					span.price-table__label Смайлики
+				td.price-table__cell-check
+					svg.price-table__check-svg
+						use(x='0' y='0' xlink:href='assets/images/icon.svg#icon_yes')
+					span.price-table__label Смайлики
+				td.price-table__cell-check
+					svg.price-table__check-svg
+						use(x='0' y='0' xlink:href='assets/images/icon.svg#icon_yes')
+					span.price-table__label Смайлики
+			tr.price-table__row
+				td.price-table__service Комментарии
+				td.price-table__cell-cross
+					svg.price-table__cross-svg
+						use(x='0' y='0' xlink:href='assets/images/icon.svg#icon_cross')
+					span.price-table__label Комментарии
+				td.price-table__cell-cross
+					svg.price-table__cross-svg
+						use(x='0' y='0' xlink:href='assets/images/icon.svg#icon_cross')
+					span.price-table__label Комментарии
+				td.price-table__cell-check
+					svg.price-table__check-svg
+						use(x='0' y='0' xlink:href='assets/images/icon.svg#icon_yes')
+					span.price-table__label Комментарии
+					
+		div.price__toggle.toggle
+			input(type="radio" name="price__toggle" value="row1" id="row1").toggle__input
+			label(for="row1" id="price1-label").toggle__label  
+			input(type="radio" name="price__toggle" value="row2" checked id="row2").toggle__input
+			label(for="row2" id="price2-label").toggle__label
+			input(type="radio" name="price__toggle" value="row3" id="row3").toggle__input
+			label(for="row3" id="price3-label").toggle__label
